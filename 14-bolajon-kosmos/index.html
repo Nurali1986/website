@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Kosmos — O'yin orqali o'rganish sayyorasi</title>
+  <meta name="description" content="Bolajon Kosmos: maktabgacha yoshdagi bolalar uchun o'yinlar, multfilmlar va uyda qilinadigan ilmiy tajribalar — xavfsiz va foydali.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='11' fill='%23ffd23f'/%3E%3Cellipse cx='20' cy='20' rx='19' ry='6' fill='none' stroke='%233de0ff' stroke-width='3' transform='rotate(-20 20 20)'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon Kosmos">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="13" fill="#ffd23f"/><circle cx="19" cy="20" r="3" fill="#f5a300"/><circle cx="28" cy="28" r="2" fill="#f5a300"/><ellipse cx="24" cy="24" rx="22" ry="7" fill="none" stroke="#3de0ff" stroke-width="3" transform="rotate(-20 24 24)"/></svg>
+        <span><b>Bolajon</b><i>Kosmos</i></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active"><span>🚀</span>Bosh sahifa</a>
+        <a href="#games"><span>🎮</span>O'yinlar</a>
+        <a href="#cartoons"><span>📺</span>Multfilmlar</a>
+        <a href="#science"><span>🧪</span>Tajribalar</a>
+        <a href="#crew"><span>🏆</span>Chellenjlar</a>
+        <a href="#parents"><span>👨‍👩‍👧</span>Ota-onalar</a>
+      </nav>
+      <button class="login" id="loginBtn">👤 <span id="loginText">Kirish</span></button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Bilimlar olamiga<br><span>parvoz qilamiz!</span></h1>
+          <p>Qiziqarli o'yinlar, ajoyib multfilmlar va uyda qilinadigan tajribalar — o'rganish haqiqiy sarguzashtga aylanadi!</p>
+          <div class="hero__actions">
+            <button class="btn btn--yellow" data-game="math">Missiyani boshlash 🚀</button>
+            <button class="btn btn--ghost" data-cartoon="0">▶ Treylerni ko'rish</button>
+          </div>
+          <div class="trusted"><span class="faces">🧒👧👦</span> 100 000+ oila ishonadi</div>
+        </div>
+        <div class="hero__ship" aria-hidden="true">
+          <svg viewBox="0 0 400 300">
+            <defs>
+              <radialGradient id="glass" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#6fe7ff" stop-opacity=".55"/><stop offset="1" stop-color="#3a2d9c" stop-opacity=".85"/></radialGradient>
+              <linearGradient id="hull" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c8cff5"/><stop offset="1" stop-color="#5b64a8"/></linearGradient>
+            </defs>
+            <ellipse cx="200" cy="200" rx="185" ry="55" fill="url(#hull)"/>
+            <ellipse cx="200" cy="190" rx="185" ry="45" fill="#8a93d6"/>
+            <path d="M80 190a120 115 0 0 1 240 0z" fill="url(#glass)" stroke="#bff5ff" stroke-width="4"/>
+            <text x="135" y="175" font-size="56">👧</text><text x="178" y="160" font-size="60">🧒</text><text x="225" y="178" font-size="54">👦</text>
+            <g class="lights"><circle cx="60" cy="215" r="8" fill="#ff4f8b"/><circle cx="120" cy="235" r="8" fill="#3de0ff"/><circle cx="200" cy="243" r="8" fill="#ffd23f"/><circle cx="280" cy="235" r="8" fill="#3de0ff"/><circle cx="340" cy="215" r="8" fill="#ff4f8b"/></g>
+          </svg>
+          <span class="robot">🤖</span><span class="planet p1">🪐</span><span class="planet p2">🌙</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="quick">
+          <a href="#games"><span>🎮</span>O'yinlar<br>o'ynash</a>
+          <a href="#cartoons"><span>📺</span>Multfilm<br>ko'rish</a>
+          <a href="#science"><span>🧪</span>Ilmiy<br>tajribalar</a>
+          <a href="#crew"><span>🚀</span>Haftalik<br>chellenj</a>
+          <a href="#" id="rewardsLink"><span>⭐</span>Yulduzlar:<br><b id="starCount">0</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="games">
+      <div class="container row__grid">
+        <div class="row__intro"><small class="c-cyan">KOINOTNI KASHF ET</small><h2>Ajoyib o'yinlar</h2><p>Aqlni charxlaydigan qiziqarli va foydali o'yinlar!</p></div>
+        <div class="cards">
+          <button class="tile" data-game="math"><img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=400&q=80&auto=format&fit=crop" alt=""><span class="tile__label">➕ Matematika missiyasi</span><em class="badge">O'YNASH</em></button>
+          <button class="tile" data-game="memory"><img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=400&q=80&auto=format&fit=crop" alt=""><span class="tile__label">👽 Juftini top</span><em class="badge">O'YNASH</em></button>
+          <button class="tile" data-game="count"><img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&q=80&auto=format&fit=crop" alt=""><span class="tile__label">⭐ Yulduzlarni sana</span><em class="badge">O'YNASH</em></button>
+          <button class="tile" data-soon="Kosmik poyga"><img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=400&q=80&auto=format&fit=crop" alt=""><span class="tile__label">🚀 Kosmik poyga</span><em class="badge badge--soon">TEZ ORADA</em></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="cartoons">
+      <div class="container row__grid">
+        <div class="row__intro"><small class="c-pink">MULTFILM QISMLARI</small><h2>Tomosha qil!</h2><p>Galaktikadagi quvnoq do'stlar bilan ajoyib sarguzashtlar!</p></div>
+        <div class="cards" id="cartoonCards"></div>
+      </div>
+    </section>
+
+    <section class="row" id="science">
+      <div class="container row__grid">
+        <div class="row__intro"><small class="c-cyan">O'RGAN VA KASHF ET</small><h2>Ilmiy tajribalar</h2><p>Kattalar yordamida uyda qilinadigan xavfsiz tajribalar.</p></div>
+        <div class="cards" id="scienceCards"></div>
+      </div>
+    </section>
+
+    <section class="container duo" id="crew">
+      <div class="crew">
+        <small class="c-cyan">JAMOA BILAN TANISHING</small>
+        <h2>Kosmik do'stlaring</h2>
+        <div class="crew__list" id="crewList"></div>
+      </div>
+      <div class="challenge">
+        <span class="rocket">🚀</span>
+        <h3>Haftalik chellenj!</h3>
+        <p id="challengeText">Bu hafta: "Matematika missiyasi"da 8 ta yulduz to'pla!</p>
+        <div class="progress"><span id="challengeBar"></span></div>
+        <small id="challengeInfo">0 / 8 yulduz</small>
+        <button class="btn btn--yellow btn--sm" data-game="math">Boshladik! 🏆</button>
+      </div>
+    </section>
+
+    <section class="container duo" id="parents">
+      <div class="parents">
+        <small class="c-yellow">OTA-ONALAR BURCHAGI</small>
+        <h2>Ishonsa bo'ladigan ta'lim</h2>
+        <ul><li>100% bolalar uchun xavfsiz muhit</li><li>Maktabgacha ta'lim dasturiga mos</li><li>Foydali ekran vaqti — kuniga 30 daqiqa tavsiya</li><li>Reklamasiz, ijtimoiy tarmoqsiz</li></ul>
+        <button class="link" id="timerBtn">⏱ Ekran vaqti taymerini yoqish →</button>
+        <p class="timer-note" id="timerNote" hidden></p>
+        <img src="https://images.unsplash.com/photo-1597524678053-5e6fef52d8a3?w=600&q=80&auto=format&fit=crop" alt="Baxtli oila" loading="lazy">
+      </div>
+      <blockquote class="quote">
+        <span>“</span>
+        <p>Bolajon Kosmos o'rganishni juda qiziqarli qildi! Farzandlarim har kuni yangi narsa o'rganishni so'rashadi.</p>
+        <div class="q-stars">★★★★★</div>
+        <cite>👩 Sarvinoz K. — ikki farzand onasi</cite>
+      </blockquote>
+    </section>
+
+    <section class="container app">
+      <span class="app__bot">🧑‍🚀</span>
+      <div><h3>Sarguzashtni o'zing bilan olib yur!</h3><p>Bolajon Kosmos ilovasini yuklab ol va yo'lda ham o'rgan!</p></div>
+      <div class="stores"><button data-soon="App Store ilovasi"> App Store</button><button data-soon="Google Play ilovasi">▶ Google Play</button></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a href="#" class="logo"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="13" fill="#ffd23f"/><ellipse cx="24" cy="24" rx="22" ry="7" fill="none" stroke="#3de0ff" stroke-width="3" transform="rotate(-20 24 24)"/></svg><span><b>Bolajon</b><i>Kosmos</i></span></a>
+      <div><h4>Kashf et</h4><ul><li><a href="#games">O'yinlar</a></li><li><a href="#cartoons">Multfilmlar</a></li><li><a href="#science">Tajribalar</a></li></ul></div>
+      <div><h4>Chellenjlar</h4><ul><li><a href="#crew">Haftalik</a></li><li><a href="#rewards" class="rewards-link">Nishonlar</a></li><li><a href="#crew">Reyting</a></li></ul></div>
+      <div><h4>Ota-onalar</h4><ul><li><a href="#parents">Qo'llanma</a></li><li><a href="#parents">Xavfsizlik</a></li><li><a href="mailto:salom@bolajonkosmos.uz">Aloqa</a></li></ul></div>
+      <div><h4>Kompaniya</h4><ul><li><a href="#">Biz haqimizda</a></li><li><a href="#">Maxfiylik siyosati</a></li><li>© <span id="year">2026</span></li></ul></div>
+    </div>
+  </footer>
+
+  <!-- Game / content modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

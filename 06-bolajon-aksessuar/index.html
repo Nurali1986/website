@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Aksessuar — Soat, sumka, ko'zoynak va zargarlik</title>
+  <meta name="description" content="Bolajon Aksessuar: soatlar, sumkalar, ko'zoynaklar, quloqchinlar va zargarlik buyumlari — haftalik chegirmalar va tez yetkazib berish.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%230b2a6f'/%3E%3Cpath d='M11 16h18l-2 16H13z' fill='%23ffb800'/%3E%3Cpath d='M15 16a5 5 0 0 1 10 0' stroke='%23ffb800' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p>🎁 Klub a'zolari uchun qo'shimcha <b>10% chegirma</b> — hoziroq qo'shiling, bepul!</p>
+      <div class="topbar__links">
+        <a href="#" data-toast="Kirish sahifasi tez orada ishga tushadi">Kirish</a>
+        <a href="#" data-toast="Ro'yxatdan o'tish tez orada ishga tushadi">Ro'yxatdan o'tish</a>
+        <span>UZS ▾</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__main">
+      <a href="#" class="logo" aria-label="Bolajon Aksessuar">BOLAJON<span>ACC</span><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.5 13h-11z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></a>
+      <form class="search" id="searchForm" role="search">
+        <select id="searchCat" aria-label="Kategoriya"><option value="all">Barcha kategoriyalar</option></select>
+        <input type="search" id="searchInput" placeholder="Mahsulot qidiring..." aria-label="Qidiruv">
+        <button type="submit">Qidirish</button>
+      </form>
+      <div class="header__icons">
+        <button class="hicon" id="wishBtn" aria-label="Sevimlilar"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg><span class="badge" id="wishCount">0</span></button>
+        <button class="cart-btn" id="cartBtn" aria-label="Savat">
+          <span class="hicon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge badge--y" id="cartCount">0</span></span>
+          <span class="cart-btn__text"><small>Savatim</small><b id="cartSum">0 so'm</b></span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="header__nav">
+      <div class="container header__nav-inner">
+        <div class="allcats">
+          <button class="allcats__btn" id="allCatsBtn"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg> Barcha kategoriyalar</button>
+          <div class="allcats__menu" id="allCatsMenu"></div>
+        </div>
+        <nav class="nav" id="nav" aria-label="Asosiy menyu">
+          <a href="#home" class="active">Bosh sahifa</a>
+          <a href="#hot">Qaynoq takliflar</a>
+          <a href="#fashion">Kolleksiyalar</a>
+          <a href="#categories">Kategoriyalar</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
+        <div class="nav__extra"><a href="#hot">Bugungi chegirmalar</a><a href="#hot" class="fire">🔥 Aksiya</a></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="slider" id="slider">
+        <div class="slide active" style="--bg:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80&auto=format&fit=crop')">
+          <div class="slide__text"><span class="stamp">SUPER<br>TAKLIF</span><small>Maxsus taklif</small><h2>SALE</h2><p>70% gacha chegirma</p><a href="#hot" class="btn btn--navy">Xarid qilish</a></div>
+        </div>
+        <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80&auto=format&fit=crop')">
+          <div class="slide__text"><small>Yangi kolleksiya</small><h2>KUZ 2026</h2><p>Yangi sumka va aksessuarlar</p><a href="#fashion" class="btn btn--navy">Ko'rish</a></div>
+        </div>
+        <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200&q=80&auto=format&fit=crop')">
+          <div class="slide__text"><small>Faqat onlayn</small><h2>-40%</h2><p>Premium soatlar va zargarlik</p><a href="#hot" class="btn btn--navy">Tanlash</a></div>
+        </div>
+        <div class="slider__dots" id="sliderDots"></div>
+        <button class="slider__arrow slider__arrow--prev" id="slidePrev" aria-label="Oldingi">‹</button>
+        <button class="slider__arrow slider__arrow--next" id="slideNext" aria-label="Keyingi">›</button>
+      </div>
+      <div class="tiles">
+        <a href="#hot" class="tile tile--dark" data-cat-link="soat"><div><small>Aqlli soatlar</small><b>2 490 000</b><span>so'mdan</span></div><img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+        <a href="#hot" class="tile tile--red" data-cat-link="audio"><div><b class="big">-76%</b><small>Quloqchinlarga</small><em>Xarid →</em></div><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+        <a href="#fashion" class="tile tile--lilac" data-cat-link="kozoynak"><div><small>Moda chegirmasi</small><b>Yangi</b><em>Ko'rish →</em></div><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+        <a href="#fashion" class="tile tile--teal" data-cat-link="sumka"><div><small>Ayollar kolleksiyasi</small><b>SALE</b><span>490 000 so'mdan</span></div><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+        <a href="#hot" class="tile tile--orange" data-cat-link="audio"><div><small>Yangi kelganlar</small><b>SALE</b><span>60% gacha</span></div><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+        <a href="#fashion" class="tile tile--green" data-cat-link="zargarlik"><div><small>Zargarlik</small><b>SALE</b><span>30% chegirma</span></div><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div><svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><p><b>Bepul yetkazish</b><small>1 mln so'mdan ortiq xaridga</small></p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><p><b>24/7 yordam</b><small>Kun-u tun onlayn</small></p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg><p><b>Bepul qaytarish</b><small>30 kun ichida</small></p></div>
+      <div><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><p><b>Xavfsiz to'lov</b><small>100% himoyalangan</small></p></div>
+      <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9a2.5 2.5 0 0 0-2.5-1.5c-1.4 0-2.5.8-2.5 2s1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2A2.5 2.5 0 0 1 9.5 15M12 6v1.5M12 16.5V18"/></svg><p><b>Katta tejash</b><small>Dam olish kunlari aksiyasi</small></p></div>
+    </section>
+
+    <!-- Circle categories -->
+    <section class="circles" id="categories"></section>
+
+    <!-- Main layout -->
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="app-box"><svg viewBox="0 0 24 24" class="qr"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM5 5h3v3H5zM16 5h3v3h-3zM5 16h3v3H5zM14 14h3v3h-3zM18 18h3v3h-3zM14 19h2M19 14h2"/></svg><div><b>Ilovani yuklab oling</b><small>Faqat ilovadagi chegirmalar</small></div></div>
+        <div class="box">
+          <h3 class="box__title">★ Maxsus mahsulotlar</h3>
+          <ul class="mini-list" id="specialList"></ul>
+          <a href="#hot" class="box__more">Barchasini ko'rish</a>
+        </div>
+        <a href="#fashion" class="promo" data-cat-link="zargarlik">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy">
+          <div><h4>ZARGARLIK<br>OLAMI</h4><p>Marvarid va kumush — sifat muhri bilan</p><span class="btn btn--yellow btn--sm">Xarid qilish</span></div>
+        </a>
+        <div class="box">
+          <h3 class="box__title">Tavsiya etamiz</h3>
+          <div id="recommended"></div>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section class="block" id="hot">
+          <div class="block__head">
+            <h2><svg viewBox="0 0 24 24"><path d="M12 22c4 0 7-3 7-7 0-5-5-7-5-12-3 2-5 5-5 8-1-1-2-2-2-4-2 2-2 5-2 8 0 4 3 7 7 7z"/></svg> Qaynoq takliflar</h2>
+            <div class="countdown" id="countdown"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b data-t="d">00</b><small>kun</small></span>:<span><b data-t="h">00</b><small>soat</small></span>:<span><b data-t="m">00</b><small>daq</small></span>:<span><b data-t="s">00</b><small>son</small></span></div>
+          </div>
+          <div class="grid grid--4" id="hotGrid"></div>
+        </section>
+
+        <a href="#fashion" class="banner">
+          <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=1200&q=80&auto=format&fit=crop" alt="" loading="lazy">
+          <div><small>3 YILLIK YUBILEY</small><b>50% CHEGIRMA</b><span>Butun do'kon bo'ylab · 1–7 oktabr</span><em>Xarid qilish</em></div>
+        </a>
+
+        <section class="block" id="fashion">
+          <div class="block__head">
+            <h2><svg viewBox="0 0 24 24"><path d="M20.4 14.5 16 10 4 20M9 4h11v11"/></svg> Moda va aksessuarlar</h2>
+            <button class="link" id="resetFilter">Barchasi</button>
+          </div>
+          <div class="chips" id="chips"></div>
+          <div class="grid grid--3" id="fashionGrid"></div>
+        </section>
+
+        <section class="features features--inner">
+          <div><svg viewBox="0 0 24 24"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21l1.4-7L2 9.3l7-.8z"/></svg><p><b>Yuqori sifat</b><small>Premium mahsulotlar</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><p><b>100% xavfsiz</b><small>Ishonchli xarid</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg><p><b>Oson qaytarish</b><small>Muammosiz</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><p><b>24/7 yordam</b><small>Doim yordamga tayyor</small></p></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <section class="newsletter" id="contact">
+    <div class="container newsletter__inner">
+      <div class="newsletter__text"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg><div><b>Yangiliklarga obuna bo'ling</b><small>Yangi mahsulotlar, maxsus takliflar va boshqalar haqida birinchi bo'lib biling.</small></div></div>
+      <form class="subscribe" id="subscribe"><input type="email" placeholder="Email manzilingiz" required aria-label="Email"><button type="submit">Obuna</button></form>
+      <div class="socials"><a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="m22 3-20 8 7 2 2 7 3-5 5 4z"/></svg></a><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--dark">BOLAJON<span>ACC</span></a><p>Zamonaviy aksessuarlar uchun bir martalik manzil — eng yaxshi narxlarda.</p><small>© <span id="year">2026</span> Bolajon Aksessuar</small></div>
+      <div><h4>Do'kon</h4><ul><li><a href="#categories">Barcha kategoriyalar</a></li><li><a href="#hot">Qaynoq takliflar</a></li><li><a href="#fashion">Yangi kelganlar</a></li><li><a href="#hot">Bugungi chegirmalar</a></li></ul></div>
+      <div><h4>Mijozlarga</h4><ul><li><a href="#">Mening hisobim</a></li><li><a href="#">Buyurtmani kuzatish</a></li><li><a href="#">Qaytarish</a></li><li><a href="#">Savollar</a></li></ul></div>
+      <div><h4>Ma'lumot</h4><ul><li><a href="#">Biz haqimizda</a></li><li><a href="#">Yetkazib berish</a></li><li><a href="#">Maxfiylik siyosati</a></li><li><a href="#">Aloqa: +998 71 555 00 11</a></li></ul></div>
+      <div><h4>Ilovani yuklang</h4><p>Ilovada qo'shimcha 10% chegirma</p><div class="stores"><a href="#">▶ Google Play</a><a href="#"> App Store</a></div></div>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__head"><h3 id="drawerTitle">Savat</h3><button data-close aria-label="Yopish">×</button></div>
+    <ul class="drawer__list" id="drawerList"></ul>
+    <div class="drawer__foot" id="drawerFoot"><div class="drawer__total"><span>Jami:</span><b id="drawerTotal">0 so'm</b></div><button class="btn btn--yellow btn--block" id="checkout">Buyurtma berish</button></div>
+  </aside>
+  <div class="overlay" id="overlay" data-close></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

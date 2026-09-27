@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Sog'lom Hayot — Sog'lom ovqatlanish markazi</title>
+  <meta name="description" content="Bolajon Sog'lom Hayot: shaxsiy ovqatlanish rejalari, dietolog maslahati, sog'lom retseptlar va kaloriya kalkulyatori.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 34C8 30 4 18 8 6c10 2 16 10 12 28z' fill='%232f7d32'/%3E%3Cpath d='M20 34c12-4 16-16 12-28-10 2-16 10-12 28z' fill='%236fbf4a'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon Sog'lom Hayot">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34C8 30 4 18 8 6c10 2 16 10 12 28z" fill="#2f7d32"/><path d="M20 34c12-4 16-16 12-28-10 2-16 10-12 28z" fill="#6fbf4a"/></svg>
+        <span><b>Bolajon<i>Life</i></b><small>Sog'lom yasha, baxtli yasha</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#calc">Kalkulyator</a>
+        <a href="#recipes">Retseptlar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--green header__cta" data-book>Qabulga yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Sog'lig'ingiz — bizning ustuvor vazifamiz</p>
+          <h1>Har kuni sog'lomroq hayot kechiring</h1>
+          <p>Sizga moslashtirilgan ovqatlanish rejalari va dietolog maslahatlari — baquvvat, xotirjam va stresssiz hayot uchun.</p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--green">Xizmatlarimiz</a>
+            <button class="btn btn--ghost" id="videoBtn"><span class="play">▶</span> Video ko'rish</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container features reveal">
+      <div><span><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></svg></span><p><b>Tabiiy mahsulotlar</b><small>Toza va tabiiy tarkib</small></p></div>
+      <div><span><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><p><b>Mutaxassis yo'riqnomasi</b><small>Professional maslahatlar</small></p></div>
+      <div><span><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/><path d="M7 12h3l1.5-2.5 2 4 1.5-1.5h2"/></svg></span><p><b>Yaxlit yondashuv</b><small>Tana, aql va ruh uchun</small></p></div>
+      <div><span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><p><b>Ishonchli va xavfsiz</b><small>Siz ishonadigan sifat</small></p></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="reveal">
+          <p class="eyebrow">Biz haqimizda</p>
+          <h2>Biz sizning salomatligingiz haqida qayg'uramiz</h2>
+          <span class="leaf-line"></span>
+          <p>Bolajon Life'da biz haqiqiy salomatlik tana, ong va turmush tarzi muvozanatidan kelib chiqadi, deb ishonamiz. Maqsadimiz — sizga to'g'ri bilim, tabiiy yechimlar va mutaxassis ko'magini berish.</p>
+          <ul class="ticks"><li>Sertifikatlangan dietologlar</li><li>Tahlillar asosida individual reja</li><li>Haftalik nazorat va Telegram orqali yordam</li></ul>
+          <a href="#services" class="btn btn--green btn--sm">Batafsil</a>
+        </div>
+        <div class="about__img reveal"><img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=1000&q=80&auto=format&fit=crop" alt="Sog'lom nonushta va mevalar" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="services">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Xizmatlarimiz</p><h2>Sizga qanday yordam beramiz</h2><span class="leaf-line"></span></div>
+        <div class="services">
+          <article class="service reveal"><div class="service__img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop" alt="Ovqatlanish rejasi" loading="lazy"></div><span class="service__icon"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/></svg></span><h3>Ovqatlanish rejasi</h3><p>Tanangiz va ongingizni oziqlantiradigan shaxsiy ratsion.</p><button class="more" data-book="Ovqatlanish rejasi">Batafsil →</button></article>
+          <article class="service reveal"><div class="service__img"><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=80&auto=format&fit=crop" alt="Faol hayot" loading="lazy"></div><span class="service__icon"><svg viewBox="0 0 24 24"><circle cx="13" cy="4" r="2"/><path d="m4 17 5-1 2-4 3 3v6M9 8l4-1 3 3 3 1"/></svg></span><h3>Faollik dasturlari</h3><p>Baquvvat va kuchli bo'lish uchun samarali mashg'ulotlar.</p><button class="more" data-book="Faollik dasturi">Batafsil →</button></article>
+          <article class="service reveal"><div class="service__img"><img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=600&q=80&auto=format&fit=crop" alt="Meal prep" loading="lazy"></div><span class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span><h3>Tayyor sog'lom taomlar</h3><p>Har kuni uyingizga yetkaziladigan muvozanatli taomlar.</p><button class="more" data-book="Tayyor taomlar">Batafsil →</button></article>
+          <article class="service reveal"><div class="service__img"><img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?w=600&q=80&auto=format&fit=crop" alt="Tabiiy mahsulotlar" loading="lazy"></div><span class="service__icon"><svg viewBox="0 0 24 24"><path d="M7 20h10M10 20c5.5-2.5.8-6.4 3-10M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8zM14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></span><h3>Detoks va tabiiy yo'l</h3><p>Uzoq muddatli salomatlik uchun tabiiy dasturlar.</p><button class="more" data-book="Detoks dasturi">Batafsil →</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <div><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2.5 1-4.5 4-4.5 1.8 0 3 1 3 4.5"/></svg><p><b><span data-count="10000">0</span>+</b><small>Mamnun mijozlar</small></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/></svg><p><b><span data-count="15">0</span>+</b><small>Yillik tajriba</small></p></div>
+        <div><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="m15 17 2 2 3-3"/></svg><p><b><span data-count="30">0</span>+</b><small>Mutaxassislar</small></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/></svg><p><b><span data-count="100">0</span>%</b><small>Tabiiy va xavfsiz</small></p></div>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section" id="calc">
+      <div class="container calc">
+        <div class="calc__intro reveal">
+          <p class="eyebrow">Bepul vosita</p>
+          <h2>Kunlik kaloriya kalkulyatori</h2>
+          <span class="leaf-line"></span>
+          <p>Ma'lumotlaringizni kiriting — tana massasi indeksi (TMI) va kunlik kaloriya ehtiyojingizni darhol hisoblab beramiz.</p>
+        </div>
+        <form class="calc__form reveal" id="calcForm">
+          <div class="seg" role="radiogroup" aria-label="Jins"><label><input type="radio" name="sex" value="m" checked><span>Erkak</span></label><label><input type="radio" name="sex" value="f"><span>Ayol</span></label></div>
+          <div class="row">
+            <label>Yosh<input type="number" name="age" min="12" max="100" value="30" required></label>
+            <label>Bo'y (sm)<input type="number" name="height" min="100" max="230" value="172" required></label>
+            <label>Vazn (kg)<input type="number" name="weight" min="30" max="250" value="72" required></label>
+          </div>
+          <label>Faollik darajasi
+            <select name="activity">
+              <option value="1.2">Kam harakat (ofis ishi)</option>
+              <option value="1.375" selected>Yengil faollik (haftada 1–3 marta)</option>
+              <option value="1.55">O'rtacha (haftada 3–5 marta)</option>
+              <option value="1.725">Yuqori (har kuni sport)</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--green btn--block">Hisoblash</button>
+          <div class="result" id="result" hidden>
+            <div class="result__bmi"><small>TMI</small><b id="bmiVal">0</b><span id="bmiTag">—</span></div>
+            <div class="bar"><span id="bmiMarker"></span></div>
+            <div class="result__kcal">
+              <div><small>Vaznni saqlash</small><b id="kMaintain">0</b></div>
+              <div><small>Ozish uchun</small><b id="kLose">0</b></div>
+              <div><small>Vazn olish</small><b id="kGain">0</b></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Recipes -->
+    <section class="section section--soft" id="recipes">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Sog'lom retseptlar</p><h2>Bugun nima pishiramiz?</h2><span class="leaf-line"></span></div>
+        <div class="filters reveal" id="filters">
+          <button class="active" data-f="all">Barchasi</button><button data-f="nonushta">Nonushta</button><button data-f="tushlik">Tushlik</button><button data-f="kechki">Kechki ovqat</button>
+        </div>
+        <div class="recipes" id="recipesGrid">
+          <article class="recipe" data-type="nonushta"><img src="https://images.unsplash.com/photo-1467453678174-768ec283a940?w=600&q=80&auto=format&fit=crop" alt="Smuzi bowl" loading="lazy"><div><span class="kcal">320 kkal</span><h3>Mevali smuzi-bowl</h3><p>🕒 10 daqiqa · Chia, banan, rezavorlar</p></div></article>
+          <article class="recipe" data-type="tushlik"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&auto=format&fit=crop" alt="Budda bowl" loading="lazy"><div><span class="kcal">480 kkal</span><h3>Nohatli budda-bowl</h3><p>🕒 25 daqiqa · Avokado, nohat, sabzavot</p></div></article>
+          <article class="recipe" data-type="kechki"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&auto=format&fit=crop" alt="Kinoa salat" loading="lazy"><div><span class="kcal">410 kkal</span><h3>Kinoa va sabzavot salati</h3><p>🕒 20 daqiqa · Kinoa, pomidor, ko'kat</p></div></article>
+          <article class="recipe" data-type="nonushta"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&auto=format&fit=crop" alt="Nonushta" loading="lazy"><div><span class="kcal">380 kkal</span><h3>Tuxum va avokado nonushtasi</h3><p>🕒 15 daqiqa · Tuxum, avokado, ko'kat</p></div></article>
+          <article class="recipe" data-type="tushlik"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop" alt="Losos salat" loading="lazy"><div><span class="kcal">520 kkal</span><h3>Baliqli poke-bowl</h3><p>🕒 30 daqiqa · Baliq, guruch, sabzavot</p></div></article>
+          <article class="recipe" data-type="kechki"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80&auto=format&fit=crop" alt="Salat" loading="lazy"><div><span class="kcal">260 kkal</span><h3>Rangli bahor salati</h3><p>🕒 10 daqiqa · Rediska, bodring, sabzi</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container cta reveal">
+        <div><h2>Sog'lom hayotni bugundan boshlang</h2><p>Birinchi konsultatsiya — bepul. Dietologimiz sizga 24 soat ichida qo'ng'iroq qiladi.</p></div>
+        <button class="btn btn--light" data-book>Bepul konsultatsiya</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--light"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34C8 30 4 18 8 6c10 2 16 10 12 28z" fill="#9ad26f"/><path d="M20 34c12-4 16-16 12-28-10 2-16 10-12 28z" fill="#6fbf4a"/></svg><span><b>Bolajon<i>Life</i></b><small>Sog'lom yasha, baxtli yasha</small></span></a><p>Toshkent sh., Yakkasaroy tumani, Bobur ko'chasi 8</p></div>
+      <div><h4>Xizmatlar</h4><ul><li><a href="#services">Ovqatlanish rejasi</a></li><li><a href="#services">Tayyor taomlar</a></li><li><a href="#calc">Kaloriya kalkulyatori</a></li><li><a href="#recipes">Retseptlar</a></li></ul></div>
+      <div><h4>Aloqa</h4><ul><li><a href="tel:+998712345678">+998 71 234 56 78</a></li><li><a href="mailto:salom@bolajonlife.uz">salom@bolajonlife.uz</a></li><li>Du–Sha: 09:00 – 19:00</li></ul></div>
+      <div><h4>Obuna</h4><p>Haftalik retseptlar va maslahatlar.</p><form class="subscribe" id="subscribe"><input type="email" placeholder="Email" required aria-label="Email"><button type="submit">→</button></form></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Bolajon Life. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Qabulga yozilish</h3>
+      <form id="bookForm">
+        <label>Ismingiz<input type="text" required></label>
+        <label>Telefon<input type="tel" placeholder="+998 __ ___ __ __" required></label>
+        <label>Maqsadingiz<select required><option value="">Tanlang</option><option>Vazn yo'qotish</option><option>Vazn olish</option><option>Sog'lom ovqatlanish</option><option>Sport uchun ratsion</option></select></label>
+        <button type="submit" class="btn btn--green btn--block">Yuborish</button>
+      </form>
+      <div class="success" id="bookSuccess" hidden><div class="success__icon">🌿</div><h3>Rahmat!</h3><p>Dietologimiz tez orada bog'lanadi.</p></div>
+    </div>
+  </div>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog modal__dialog--video" role="dialog" aria-modal="true" aria-label="Video">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <div class="slides" id="slides">
+        <img class="active" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1200&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=1200&q=80&auto=format&fit=crop" alt="">
+        <span>Bolajon Life — sog'lom odatlar sari</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

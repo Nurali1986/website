@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Nigora Saidova — UZI diagnostika</title>
+  <meta name="description" content="UZI shifokori Dr. Nigora Saidova: qorin bo'shlig'i, qalqonsimon bez, homiladorlik, yurak va tomirlar ultratovush tekshiruvi. Natija 30 daqiqada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231652c4'/%3E%3Cpath d='M8 26c4-10 8-10 12 0s8 10 12 0' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>✔ Aniq natija</span><span class="hide-sm">🏠 Uyga chaqirish mumkin</span><span class="hide-sm">🕗 Du–Sha: 08:00 – 20:00</span><a href="tel:+998951234455">📞 +998 95 123 44 55</a>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Dr. Nigora Saidova"><span class="logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 24c4-12 9-12 14 0s10 12 14 0" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span><span><b>DR. NIGORA SAIDOVA</b><small>UZI DIAGNOSTIKA · Aniq bugun, sog'lom ertaga</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#tests">Tekshiruvlar</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#prep">Tayyorgarlik</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="basket" id="basketBtn" aria-label="Tanlangan tekshiruvlar">🧾<i id="basketCount">0</i></button>
+      <button class="btn btn--blue header__cta" data-book>Tekshiruvga yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="kicker">ANIQ TEKSHIRUV. ISHONCHLI NATIJA.</p>
+          <h1>Sog'lig'ingiz.<br><span>Mening ustuvor vazifam.</span></h1>
+          <p>Ekspert klassdagi Samsung HERA W10 apparati, 14 yillik tajriba va har bir natijani tushunarli tushuntirish.</p>
+          <div class="hero__actions"><button class="btn btn--blue" data-book>Tekshiruvga yozilish</button><a href="#tests" class="btn btn--line">Barcha tekshiruvlar</a></div>
+          <div class="perks">
+            <div><span>🛡️</span><b>100% aniq natija</b><small>Har bosqichda nazorat</small></div>
+            <div><span>⏱️</span><b>Natija 30 daqiqada</b><small>Qo'lingizga + Telegramga</small></div>
+            <div><span>🏠</span><b>Uyga chaqirish</b><small>Ko'chma apparat bilan</small></div>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=900&q=80&auto=format&fit=crop&crop=top" alt="Dr. Nigora Saidova">
+          <div class="seal"><small>OLIY</small><b>TOIFALI</b><small>SHIFOKOR</small><span>🏅</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container finder reveal">
+      <div class="finder__search">
+        <h3>TEKSHIRUVNI TOPING</h3>
+        <p>20 dan ortiq UZI turlari orasidan qidiring</p>
+        <div class="search"><input type="search" id="search" placeholder="Masalan: qalqonsimon, homiladorlik, buyrak..." aria-label="Tekshiruv qidirish"><button aria-label="Qidirish">🔍</button></div>
+      </div>
+      <div class="finder__steps">
+        <div><span>📋</span><b>Tekshiruvni tanlang</b><small>Qidiring yoki ro'yxatdan</small></div>
+        <div><span>📅</span><b>Onlayn yoziling</b><small>Qulay kun va vaqt</small></div>
+        <div><span>🩺</span><b>Tekshiruvdan o'ting</b><small>Kabinetda yoki uyda</small></div>
+        <div><span>📄</span><b>Natijani oling</b><small>30 daqiqada, onlayn ham</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="tests">
+      <div class="container">
+        <div class="head reveal"><h2>MASHHUR TEKSHIRUVLAR VA PAKETLAR</h2><div class="chips" id="chips"></div></div>
+        <div class="tests" id="testsGrid"></div>
+        <p class="empty" id="empty" hidden>Hech narsa topilmadi. Telefon qiling — yordam beraman 📞</p>
+      </div>
+    </section>
+
+    <section class="container why reveal" id="about">
+      <div class="why__list">
+        <h3>NEGA MENI TANLASHADI</h3>
+        <ul><li>Oliy toifali shifokor, 14 yillik tajriba</li><li>Ekspert klassdagi 3D/4D apparat</li><li>Tajribali va sertifikatlangan mutaxassis</li><li>Qat'iy sifat nazorati</li><li>Maxfiy va xavfsiz natijalar</li><li>Hamyonbop narxlar</li></ul>
+      </div>
+      <div class="why__img"><img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=700&q=80&auto=format&fit=crop" alt="Shifokor tasvirlarni ko'rib chiqmoqda" loading="lazy"></div>
+      <div class="why__stats">
+        <div><span>🔬</span><b><i data-count="85">0</i>K+</b><small>O'tkazilgan tekshiruv</small></div>
+        <div><span>😊</span><b><i data-count="40">0</i>K+</b><small>Mamnun bemor</small></div>
+        <div><span>🏅</span><b><i data-count="14">0</i></b><small>Yillik tajriba</small></div>
+        <div><span>📍</span><b><i data-count="2">0</i></b><small>Qabul manzili</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="prep">
+      <div class="container">
+        <div class="head reveal"><h2>TEKSHIRUVGA TAYYORGARLIK</h2><p class="muted">To'g'ri tayyorgarlik — aniq natija garovi</p></div>
+        <div class="prep reveal" id="prepList"></div>
+      </div>
+    </section>
+
+    <section class="container band reveal">
+      <div class="band__text"><span>📅</span><div><h3>Tekshiruvga yoziling yoki<br>uyga chaqiring</h3><p>Sog'lig'ingiz — mening ustuvor vazifam.</p></div></div>
+      <div class="band__actions"><button class="btn btn--white" data-book>Tekshiruvga yozilish</button><button class="btn btn--ghost" data-book="home">Uyga chaqirish</button></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="head reveal"><h2>BEMORLAR FIKRI</h2></div>
+        <div class="reviews reveal">
+          <article><img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=120&h=120&fit=crop" alt=""><div><span class="stars">★★★★★</span><p>Ajoyib tajriba! Doktor juda e'tiborli, natijani 20 daqiqada berdi va hammasini tushuntirdi.</p><cite>— Rustam S.</cite></div></article>
+          <article><img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=120&h=120&fit=crop" alt=""><div><span class="stars">★★★★★</span><p>Homiladorlik skriningini shu yerda o'tdim. 3D tasvirni oilamizga ko'rsatdik — cheksiz baxt!</p><cite>— Madina A.</cite></div></article>
+          <article><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop" alt=""><div><span class="stars">★★★★★</span><p>Otamni uyga chaqirdik — ko'chma apparat bilan kelishdi. Juda qulay va shaffof narx.</p><cite>— Anvar V.</cite></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--light"><span class="logo__mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 24c4-12 9-12 14 0s10 12 14 0" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span><span><b>DR. NIGORA SAIDOVA</b><small>UZI DIAGNOSTIKA</small></span></a><p>Aniq, o'z vaqtida va ishonchli diagnostika.</p></div>
+      <div><h4>Tekshiruvlar</h4><ul id="footerTests"></ul></div>
+      <div><h4>Bemorlarga</h4><ul><li><a href="#" data-book>Onlayn yozilish</a></li><li><a href="#" data-book="home">Uyga chaqirish</a></li><li><a href="#prep">Tayyorgarlik</a></li><li><a href="#">Natijani yuklab olish</a></li></ul></div>
+      <div><h4>Manzillar</h4><ul><li>📍 Yunusobod, Amir Temur 108, "MedLine"</li><li>📍 Sergeli, Yangi Sergeli 11, "SihatMed"</li><li>📞 +998 95 123 44 55</li></ul></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Dr. Nigora Saidova. Sayt ma'lumot uchun; tashxisni faqat shifokor qo'yadi.</p>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__head"><h3>Tanlangan tekshiruvlar</h3><button data-close-drawer aria-label="Yopish">×</button></div>
+    <ul class="drawer__list" id="drawerList"></ul>
+    <div class="drawer__foot"><div class="total"><span>Jami:</span><b id="basketTotal">0 so'm</b></div><p class="small" id="discountNote"></p><button class="btn btn--blue btn--block" data-book>Yozilishga o'tish</button></div>
+  </aside>
+  <div class="overlay" id="overlay" data-close-drawer></div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

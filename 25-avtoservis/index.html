@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usta Rustam — Avtoservis va diagnostika</title>
+  <meta name="description" content="Avtousta Rustam Karimov: kompyuter diagnostikasi, motor va xodovoy ta'miri, moy almashtirish, Chevrolet, Kia, Hyundai, Toyota va BYD avtomobillari.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231677ff'/%3E%3Cpath d='M26 10a6 6 0 0 0-8 7L9 26l5 5 9-9a6 6 0 0 0 7-8l-4 4-3-1-1-3z' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Usta Rustam"><b>Usta <span>Rustam</span></b><small>AVTOSERVIS · DIAGNOSTIKA</small></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#calc">Narx hisoblash</a>
+        <a href="#works">Ishlar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--blue header__cta" data-book>Navbat olish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hello">Salom, men</p>
+          <h1>Rustam Karimov<br><span>Avtousta · Diagnost</span></h1>
+          <p>Mashinangizni "taxminan" emas — kompyuter diagnostikasi va 17 yillik tajriba bilan aniq tuzataman. Ehtiyot qismlar narxi oldindan aytiladi.</p>
+          <div class="hero__actions"><button class="btn btn--blue" data-book>Navbat olish →</button><a href="#calc" class="btn btn--dark">🧮 Narxni hisoblash</a></div>
+          <p class="trusted-label">Ishlaydigan brendlar</p>
+          <div class="brands"><span>Chevrolet</span><span>Kia</span><span>Hyundai</span><span>Toyota</span><span>BYD</span></div>
+        </div>
+        <div class="hero__portrait"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=900&q=80&auto=format&fit=crop&crop=top" alt="Avtousta Rustam Karimov"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="reveal">
+          <p class="kicker">MEN HAQIMDA</p>
+          <h2>Mashinangizga o'zimnikidek qarayman</h2>
+          <p class="muted">2008-yildan beri avtoservisda ishlayman: avval GM Uzbekistan servis markazida, 2016-yildan o'z ustaxonamda. Har bir mashinani ko'targichga qo'yishdan oldin diagnostika qilaman va nima, nega va qancha turishini tushuntiraman.</p>
+          <ul class="checks"><li>17 yillik tajriba</li><li>Kafolat — 6 oy / 10 000 km</li><li>2 000+ doimiy mijoz</li><li>Eski detal sizga qaytariladi</li></ul>
+          <a href="#services" class="btn btn--blue btn--sm">Xizmatlar ↓</a>
+        </div>
+        <div class="info reveal">
+          <div><span>📍</span><p><b>Manzil</b>Toshkent, Sergeli, Yangi Sergeli 45A</p></div>
+          <div><span>🕗</span><p><b>Ish vaqti</b>Du–Sha: 08:00 – 20:00</p></div>
+          <div><span>📞</span><p><b>Telefon</b>+998 97 555 33 11</p></div>
+          <div><span>🛠</span><p><b>Holat</b><em id="status"></em></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="head reveal"><p class="kicker">XIZMATLAR</p><h2>Nima qila olaman</h2></div>
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="calc">
+      <div class="container calc reveal">
+        <div>
+          <p class="kicker">NARX KALKULYATORI</p>
+          <h2>Ta'mir qancha turadi?</h2>
+          <p class="muted">Mashina klassi va kerakli ishlarni tanlang. Hisob — ish haqi; ehtiyot qismlar alohida, oldindan kelishiladi.</p>
+          <div class="classes" id="classes"></div>
+          <div class="jobs" id="jobs"></div>
+        </div>
+        <aside class="bill">
+          <h3>🧾 Hisob</h3>
+          <ul id="billList"></ul>
+          <div class="bill__row"><span>Taxminiy vaqt</span><b id="billTime">—</b></div>
+          <div class="bill__total"><span>Ish haqi</span><b id="billSum">0 so'm</b></div>
+          <p class="small muted" id="billNote">Diagnostika — ta'mir qilinsa bepul</p>
+          <button class="btn btn--blue btn--block" data-book="calc">Shu ishlar uchun navbat olish</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="symptoms">
+      <div class="container">
+        <div class="head reveal"><p class="kicker">TEZKOR YORDAM</p><h2>Mashinada nima bo'lyapti?</h2><p class="muted">Belgini tanlang — ehtimoliy sabab va nima qilish kerakligini aytaman.</p></div>
+        <div class="sym reveal">
+          <div class="sym__list" id="symList"></div>
+          <div class="sym__answer" id="symAnswer"><p class="muted">👈 Chapdan belgini tanlang</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="head head--row reveal"><div><p class="kicker">SO'NGGI ISHLAR</p><h2>Qilingan ishlar</h2></div></div>
+        <div class="works reveal">
+          <article><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Motor kapital ta'miri</h3><span>Chevrolet Cobalt · 4 kun</span></div></article>
+          <article><img src="https://images.unsplash.com/photo-1632733711679-529326f6db12?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Elektr tizimi diagnostikasi</h3><span>Kia K5 · 3 soat</span></div></article>
+          <article><img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?w=700&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Xodovoy va tormoz</h3><span>Toyota Camry · 1 kun</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="together" id="contact">
+      <div class="container together__inner reveal">
+        <h2>Mashinangiz ishonchli qo'llarda</h2>
+        <p>Navbat oling yoki qo'ng'iroq qiling — bugunoq ko'rib beraman.</p>
+        <div class="together__actions"><button class="btn btn--blue" data-book>Navbat olish →</button><a class="btn btn--dark" href="tel:+998975553311">📞 +998 97 555 33 11</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo"><b>Usta <span>Rustam</span></b><small>AVTOSERVIS · DIAGNOSTIKA</small></a>
+      <p>© <span id="year">2026</span> Usta Rustam. Barcha huquqlar himoyalangan.</p>
+      <div class="socials"><a href="#" aria-label="Telegram">✈</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Navbat olish</h3>
+      <p class="sel" id="bookSel" hidden></p>
+      <form id="bookForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <div class="row"><label>Mashina<input required placeholder="Masalan: Cobalt 2020"></label><label>Davlat raqami<input placeholder="01 A 123 BC" pattern="[0-9]{2} ?[A-Za-z] ?[0-9]{3} ?[A-Za-z]{2}|[0-9]{2} ?[0-9]{3} ?[A-Za-z]{3}" title="Masalan: 01 A 123 BC"></label></div>
+        <div class="row"><label>Sana<input type="date" id="bookDate" required></label><label>Vaqt<select><option>08:00</option><option>10:00</option><option>12:00</option><option>14:00</option><option>16:00</option><option>18:00</option></select></label></div>
+        <button class="btn btn--blue btn--block">Tasdiqlash</button>
+      </form>
+      <div class="ok" id="bookOk" hidden><div>🔧</div><h3>Navbat olindi!</h3><p class="muted">SMS orqali tasdiq keladi. Kechiksangiz, qo'ng'iroq qiling.</p></div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

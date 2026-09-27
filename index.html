@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saytlar katalogi — 24 ta tayyor veb-sayt</title>
+  <meta name="description" content="HTML, CSS va JavaScript'da yaratilgan 24 ta sayt: maktab, klinika, do'konlar va shaxsiy brendlar. Har birini ochib, telefon va kompyuterda ko'ring.">
+  <meta property="og:title" content="Saytlar katalogi — 24 ta tayyor veb-sayt">
+  <meta property="og:description" content="Maktab, klinika, do'konlar va shaxsiy brendlar uchun saytlar — oching va sinab ko'ring.">
+  <meta property="og:image" content="assets/thumbs/01.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/catalog.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23111827'/%3E%3Crect x='9' y='9' width='9' height='9' rx='2' fill='%23fbbf24'/%3E%3Crect x='22' y='9' width='9' height='9' rx='2' fill='%23fff'/%3E%3Crect x='9' y='22' width='9' height='9' rx='2' fill='%23fff'/%3E%3Crect x='22' y='22' width='9' height='9' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top__inner">
+      <a href="#" class="logo"><span class="logo__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Saytlar<b>katalogi</b></a>
+      <button class="theme" id="themeBtn" type="button" aria-label="Yorug' / qorong'i rejim">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">Portfolio · HTML · CSS · JavaScript</p>
+      <h1>Har bir soha uchun <em>tayyor sayt</em></h1>
+      <p class="lead">Maktab va klinikadan tortib, do'konlar va shaxsiy brendlargacha. Har bir sayt alohida dizaynda, telefonga moslashgan va ichida ishlaydigan kalkulyator, test yoki o'yin bor.</p>
+      <dl class="stats">
+        <div><dt>Jami saytlar</dt><dd id="statTotal">24</dd></div>
+        <div><dt>Biznes saytlari</dt><dd id="statBiz">13</dd></div>
+        <div><dt>Shaxsiy brendlar</dt><dd id="statBrand">11</dd></div>
+      </dl>
+    </section>
+
+    <section class="catalog wrap" aria-label="Saytlar ro'yxati">
+      <div class="toolbar">
+        <div class="seg" id="types" role="group" aria-label="Sayt turi">
+          <button type="button" data-type="all" class="active">Hammasi</button>
+          <button type="button" data-type="biz">Biznes</button>
+          <button type="button" data-type="brand">Shaxsiy brend</button>
+        </div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Qidirish: klinika, kalkulyator, savat…" aria-label="Saytlarni qidirish"></label>
+      </div>
+      <div class="chips" id="cats" role="group" aria-label="Soha"></div>
+      <p class="count" id="count" aria-live="polite"></p>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p>Hech narsa topilmadi.</p>
+        <button class="btn btn--ghost" id="reset" type="button">Filtrlarni tozalash</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p>© <span id="year">2026</span> Saytlar katalogi. Saytlardagi ism, manzil va telefonlar namuna uchun, formalar hech qayerga yuborilmaydi.</p>
+      <p>Rasmlar: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <div class="preview" id="preview" hidden>
+    <div class="preview__backdrop" data-close></div>
+    <div class="preview__dialog" role="dialog" aria-modal="true" aria-labelledby="pvTitle">
+      <div class="preview__bar">
+        <button class="icon" id="pvPrev" type="button" aria-label="Oldingi sayt">←</button>
+        <h2 id="pvTitle">Sayt</h2>
+        <button class="icon" id="pvNext" type="button" aria-label="Keyingi sayt">→</button>
+        <div class="seg seg--sm" id="devices" role="group" aria-label="Ekran o'lchami">
+          <button type="button" data-device="desktop" class="active">🖥 Kompyuter</button>
+          <button type="button" data-device="mobile">📱 Telefon</button>
+        </div>
+        <a class="btn btn--primary btn--sm" id="pvOpen" href="#" target="_blank" rel="noopener">Yangi oynada ↗</a>
+        <button class="icon" id="pvClose" type="button" data-close aria-label="Yopish">×</button>
+      </div>
+      <div class="preview__stage" id="stage" data-device="desktop">
+        <iframe id="frame" title="Sayt ko'rinishi" src="about:blank"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/catalog.js"></script>
+</body>
+</html>

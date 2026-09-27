@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Gulnora Axmedova — Akusher-ginekolog</title>
+  <meta name="description" content="Akusher-ginekolog Dr. Gulnora Axmedova: homiladorlikni kuzatish, rejalashtirish, ayollar salomatligi, profilaktik ko'riklar va UZI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23c9667f'/%3E%3Cpath d='M20 30s-9-5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 12-9 12z' fill='%23fff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Dr. Gulnora Axmedova"><span class="logo__mark">🌷</span><span><b>Dr. Gulnora</b><small>akusher-ginekolog</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#pregnancy">Homiladorlik kalkulyatori</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#faq">Savollar</a>
+      </nav>
+      <button class="btn btn--rose header__cta" data-book>Qabulga yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Ayollar salomatligi · Onalik · Ishonch</p>
+          <h1>Har bir bosqichda — <em>yoningizda</em></h1>
+          <p>Men Gulnora — 16 yillik tajribaga ega akusher-ginekolog. Profilaktik ko'rikdan homiladorlikni to'liq kuzatishgacha — nozik, e'tiborli va maxfiy yondashuv.</p>
+          <div class="hero__actions"><button class="btn btn--rose" data-book>Qabulga yozilish</button><a href="#pregnancy" class="btn btn--soft">🤰 Homiladorlik muddatini hisoblash</a></div>
+          <ul class="trust"><li>🔒 To'liq maxfiylik</li><li>👩‍⚕️ Faqat ayol shifokor</li><li>🩺 UZI kabinetda</li></ul>
+        </div>
+        <div class="hero__media reveal">
+          <div class="arch"><img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=900&q=80&auto=format&fit=crop&crop=top" alt="Dr. Gulnora Axmedova"></div>
+          <div class="float f1"><b data-count="3200">0</b>+<small>sog'lom chaqaloq</small></div>
+          <div class="float f2">⭐ 4.9 <small>· 480 sharh</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Xizmatlar</p><h2>Ayol salomatligining barcha bosqichlari</h2></div>
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--rose" id="pregnancy">
+      <div class="container preg reveal">
+        <div>
+          <p class="eyebrow">Homiladorlik kalkulyatori</p>
+          <h2>Chaqaloq qachon tug'iladi?</h2>
+          <p class="muted">Oxirgi hayz boshlangan kunni kiriting — homiladorlik haftasini, trimestrni va taxminiy tug'ruq sanasini hisoblayman.</p>
+          <form class="preg__form" id="pregForm">
+            <label>Oxirgi hayzning birinchi kuni<input type="date" id="lmp" required></label>
+            <label>Sikl davomiyligi: <b id="cycleOut">28</b> kun<input type="range" id="cycle" min="21" max="35" value="28"></label>
+            <button class="btn btn--rose btn--block">Hisoblash</button>
+          </form>
+          <p class="note">* Taxminiy hisob (Negele qoidasi). Aniq muddatni UZI belgilaydi.</p>
+        </div>
+        <div class="preg__result" id="pregResult">
+          <div class="empty"><span>🌸</span><p>Sanani kiriting va "Hisoblash"ni bosing</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <div class="about__imgs">
+          <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=700&q=80&auto=format&fit=crop" alt="Ona va bola" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=500&q=80&auto=format&fit=crop" alt="Chaqaloq oyoqchalari" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">Men haqimda</p>
+          <h2>Ishonch — eng muhim dori</h2>
+          <p class="muted">Toshkent tibbiyot akademiyasini, keyin Istanbuldagi Acıbadem klinikasida perinatologiya bo'yicha malaka oshirishni tamomlaganman. Har bir ayolga shoshilmasdan, tushuntirib va hurmat bilan yondashaman.</p>
+          <ul class="timeline">
+            <li><b>2010</b>Oliy toifali akusher-ginekolog</li>
+            <li><b>2016</b>Perinatologiya, Acıbadem (Turkiya)</li>
+            <li><b>2020</b>Ekspert UZI sertifikati (FMF)</li>
+            <li><b>2024</b>"Yilning shifokori" nominanti</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="faq">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Savol-javob</p><h2>Ko'p so'raladigan savollar</h2></div>
+        <div class="faq reveal" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="container cta reveal">
+      <div><h2>Salomatligingizni keyinga qoldirmang</h2><p>Yiliga bir marta profilaktik ko'rik — eng yaxshi g'amxo'rlik.</p></div>
+      <button class="btn btn--white" data-book>Qabulga yozilish</button>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--light"><span class="logo__mark">🌷</span><span><b>Dr. Gulnora</b><small>akusher-ginekolog</small></span></a></div>
+      <div><h4>Manzil</h4><p>Toshkent, Yunusobod, 4-mavze, "Ona va bola" klinikasi, 2-qavat</p></div>
+      <div><h4>Qabul</h4><p>Du–Ju: 09:00 – 17:00<br>Shanba: 09:00 – 13:00</p></div>
+      <div><h4>Aloqa</h4><p>+998 93 444 55 66<br>Telegram: @dr_gulnora</p></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Dr. Gulnora Axmedova. Saytdagi ma'lumot shifokor ko'rigini almashtirmaydi.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Qabulga yozilish</h3>
+      <form id="bookForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <label>Maqsad<select id="bookTopic"></select></label>
+        <label>Qulay kun<input type="date" id="bookDate" required></label>
+        <button class="btn btn--rose btn--block">Yuborish</button>
+        <p class="note center">🔒 Ma'lumotlaringiz qat'iy maxfiy saqlanadi</p>
+      </form>
+      <div class="ok" id="bookOk" hidden><div>🌷</div><h3>Rahmat!</h3><p class="muted">Administrator qo'ng'iroq qilib, vaqtni tasdiqlaydi.</p></div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

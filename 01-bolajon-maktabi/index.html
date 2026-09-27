@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon xususiy maktabi — Bilimli avlod, porloq kelajak</title>
+  <meta name="description" content="Bolajon xususiy maktabi: maktabgacha ta'limdan 11-sinfgacha zamonaviy, xavfsiz va samimiy ta'lim muhiti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 46'%3E%3Cpath d='M20 1 38 7v15c0 12-8 20-18 23C10 42 2 34 2 22V7z' fill='%230b1f4b' stroke='%23f2a91d' stroke-width='2.5'/%3E%3Ctext x='20' y='31' font-family='Georgia' font-size='22' font-weight='700' fill='%23fff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Toshkent sh., Yunusobod tumani, Bilim ko'chasi 12</span>
+        <a href="tel:+998712001122"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+998 71 200 11 22</a>
+        <a href="mailto:info@bolajon.uz"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>info@bolajon.uz</a>
+      </div>
+      <div class="topbar__links">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Ota-onalar kabineti</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>O'quvchi kirishi</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon xususiy maktabi">
+        <svg class="logo__mark" viewBox="0 0 40 46" aria-hidden="true">
+          <path d="M20 1 38 7v15c0 12-8 20-18 23C10 42 2 34 2 22V7z" fill="#0b1f4b" stroke="#f2a91d" stroke-width="2.5"/>
+          <text x="20" y="31" font-family="Playfair Display, Georgia, serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">B</text>
+        </svg>
+        <span class="logo__text"><strong>BOLAJON</strong><small>XUSUSIY MAKTABI</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="nav__link active">Bosh sahifa</a>
+        <a href="#about" class="nav__link">Biz haqimizda</a>
+        <a href="#admission" class="nav__link">Qabul</a>
+        <a href="#programs" class="nav__link">Ta'lim</a>
+        <a href="#campus" class="nav__link">Maktab hayoti</a>
+        <a href="#news" class="nav__link">Yangiliklar</a>
+        <a href="#contact" class="nav__link">Aloqa</a>
+        <a href="#admission" class="btn btn--gold nav__cta">Hujjat topshirish</a>
+      </nav>
+
+      <a href="#admission" class="btn btn--gold header__cta">Hujjat topshirish</a>
+      <button class="burger" id="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" role="img" aria-label="Sinfda birga o‘qiyotgan bolalar"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <h1>Bilimli avlod.<br><span>Porloq kelajak.</span></h1>
+          <p>Farzandingiz o'rganadigan, ulg'ayadigan va ertangi kunning yetakchisi bo'lib shakllanadigan samimiy muhit.</p>
+          <div class="hero__actions">
+            <a href="#about" class="btn btn--navy">Maktab bilan tanishing <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <button class="btn btn--outline" id="videoBtn"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span> Video ko'rish</button>
+          </div>
+        </div>
+        <div class="hero__badge reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="20" r="14" fill="#f2a91d"/><path d="m24 11 2.8 5.6 6.2.9-4.5 4.4 1 6.1-5.5-2.9-5.5 2.9 1-6.1-4.5-4.4 6.2-.9z" fill="#fff"/><path d="m16 31-4 14 7-3 5 5 2-14M32 31l4 14-7-3-5 5" fill="#0b1f4b"/></svg>
+          <div><small>Ishonchli an'analar</small><strong>Sifat</strong><small>2004-yildan beri</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="features__box reveal">
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+            <div><h3>Har tomonlama ta'lim</h3><p>Aqliy, hissiy va ijtimoiy rivojlanish.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="m15 17 2 2 3-3"/></svg></span>
+            <div><h3>Tajribali ustozlar</h3><p>O'z ishiga fidoyi, malakali pedagoglar.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></span>
+            <div><h3>Innovatsion ta'lim</h3><p>Zamonaviy jihozlar va ijodiy metodlar.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+            <div><h3>Xalqaro dunyoqarash</h3><p>Global kelajakka tayyorgarlik.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><h3>Xavfsiz muhit</h3><p>Har bir bola o'zini himoyada his qiladi.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__text reveal">
+          <span class="eyebrow">Maktabimiz haqida</span>
+          <h2>Ta'limda yuksak sifat,<br><span>hayotda yuksak odob</span></h2>
+          <p>Bolajon xususiy maktabida biz qiziquvchan fikrlaydigan, mustahkam qadriyatlarga ega va dunyoni yaxshi tomonga o'zgartirishga tayyor, o'ziga ishongan shaxslarni tarbiyalaymiz.</p>
+          <a href="#programs" class="btn btn--navy btn--sm">Batafsil ma'lumot <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="mini-stats">
+            <div><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2.5 1-4.5 4-4.5 1.8 0 3 1 3 4.5"/></svg><div><strong>20+</strong><small>Yillik tajriba</small></div></div>
+            <div><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><div><strong>1200+</strong><small>Baxtli o'quvchilar</small></div></div>
+            <div><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg><div><strong>150+</strong><small>Yutuq va mukofotlar</small></div></div>
+          </div>
+        </div>
+        <div class="about__image reveal">
+          <img src="https://images.unsplash.com/photo-1613896527026-f195d5c818ed?w=1000&q=80&auto=format&fit=crop" alt="Bolajon maktabi binosi" loading="lazy">
+        </div>
+        <div class="about__cards">
+          <div class="info-card reveal"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg><div><strong>12:1</strong><small>O'quvchi va o'qituvchi nisbati</small></div></div>
+          <div class="info-card reveal"><svg viewBox="0 0 24 24" class="fill"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg><div><strong>35+</strong><small>To'garak va faoliyatlar</small></div></div>
+          <div class="info-card reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><div><strong>4 til</strong><small>O'zbek, ingliz, rus, xitoy</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="programs section" id="programs">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ta'lim dasturlari</span>
+          <h2>Dasturlarimiz bilan tanishing</h2>
+          <p>Har bir o'quvchini ilhomlantiradigan va rivojlantiradigan puxta o'quv dasturi.</p>
+        </div>
+        <div class="programs__grid">
+          <article class="program reveal">
+            <div class="program__img"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80&auto=format&fit=crop" alt="Maktabgacha ta'lim" loading="lazy"></div>
+            <div class="program__body"><h3>Maktabgacha</h3><p>Bir umrlik o'rganish uchun samimiy boshlanish.</p><span>3–6 yosh</span></div>
+          </article>
+          <article class="program reveal">
+            <div class="program__img"><img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?w=600&q=80&auto=format&fit=crop" alt="Boshlang'ich sinflar" loading="lazy"></div>
+            <div class="program__body"><h3>Boshlang'ich sinflar</h3><p>Kelajak uchun mustahkam poydevor qo'yamiz.</p><span>1–4 sinflar</span></div>
+          </article>
+          <article class="program reveal">
+            <div class="program__img"><img src="https://images.unsplash.com/photo-1522661067900-ab829854a57f?w=600&q=80&auto=format&fit=crop" alt="O'rta sinflar" loading="lazy"></div>
+            <div class="program__body"><h3>O'rta sinflar</h3><p>Qiziqish va tanqidiy fikrlashni rag'batlantiramiz.</p><span>5–9 sinflar</span></div>
+          </article>
+          <article class="program reveal">
+            <div class="program__img"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80&auto=format&fit=crop" alt="Yuqori sinflar" loading="lazy"></div>
+            <div class="program__body"><h3>Yuqori sinflar</h3><p>Oliy ta'lim va hayotga yetakchilarni tayyorlaymiz.</p><span>10–11 sinflar</span></div>
+          </article>
+          <article class="program reveal">
+            <div class="program__img"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80&auto=format&fit=crop" alt="To'garaklar" loading="lazy"></div>
+            <div class="program__body"><h3>To'garaklar</h3><p>Sinfdan tashqaridagi iste'dodlarni kashf eting.</p><span>Sport va san'at</span></div>
+          </article>
+        </div>
+        <div class="center reveal"><a href="#contact" class="btn btn--navy btn--sm">Barcha dasturlar <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- Counters -->
+    <section class="counters">
+      <div class="container">
+        <div class="counters__box reveal">
+          <div class="counter"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6M12 2v3"/></svg><div><strong data-count="20">0</strong><b>+</b><small>Yillik tajriba</small></div></div>
+          <div class="counter"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2.5 1-4.5 4-4.5 1.8 0 3 1 3 4.5"/></svg><div><strong data-count="1200">0</strong><b>+</b><small>O'quvchilar</small></div></div>
+          <div class="counter"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="m15 17 2 2 3-3"/></svg><div><strong data-count="110">0</strong><b>+</b><small>Malakali o'qituvchilar</small></div></div>
+          <div class="counter"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-2 8 5.5-3 5.5 3-2-8"/></svg><div><strong data-count="150">0</strong><b>+</b><small>Olingan mukofotlar</small></div></div>
+          <div class="counter"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5M22 10v6"/></svg><div><strong data-count="97">0</strong><b>%</b><small>OTMga kirish ko'rsatkichi</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus life -->
+    <section class="campus section" id="campus">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Maktab hayoti</span>
+          <h2>Har kuni yangi kashfiyot</h2>
+          <p>Kutubxona, laboratoriyalar, sport maydonlari va ijodiy xonalar — hammasi bir joyda.</p>
+        </div>
+        <div class="gallery reveal">
+          <figure class="gallery__item gallery__item--big"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000&q=80&auto=format&fit=crop" alt="Dars jarayoni" loading="lazy"><figcaption>Faol darslar</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80&auto=format&fit=crop" alt="Kutubxona" loading="lazy"><figcaption>Kutubxona</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=600&q=80&auto=format&fit=crop" alt="Laboratoriya" loading="lazy"><figcaption>Fan laboratoriyasi</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600&q=80&auto=format&fit=crop" alt="O'qish zali" loading="lazy"><figcaption>O'qish zali</figcaption></figure>
+          <figure class="gallery__item"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80&auto=format&fit=crop" alt="Ijodiy mashg‘ulot" loading="lazy"><figcaption>Jamoaviy loyihalar</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="news section" id="news">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Yangiliklar va tadbirlar</span>
+          <h2>Maktabimizda nimalar bo'lyapti?</h2>
+        </div>
+        <div class="news__grid">
+          <article class="news-card reveal">
+            <time>12 sentabr, 2026</time>
+            <h3>Yangi o'quv yili tantanali ochildi</h3>
+            <p>300 dan ortiq yangi o'quvchi Bolajon oilasiga qo'shildi. Birinchi qo'ng'iroq bayrami iliq kayfiyatda o'tdi.</p>
+            <a href="#">Batafsil →</a>
+          </article>
+          <article class="news-card reveal">
+            <time>28 avgust, 2026</time>
+            <h3>Olimpiadada 14 ta medal</h3>
+            <p>O'quvchilarimiz matematika, fizika va ingliz tili bo'yicha respublika olimpiadasida sovrinli o'rinlarni egalladi.</p>
+            <a href="#">Batafsil →</a>
+          </article>
+          <article class="news-card reveal">
+            <time>5 oktabr, 2026</time>
+            <h3>Ochiq eshiklar kuni</h3>
+            <p>Ota-onalarni maktabimiz bilan yaqindan tanishish, ustozlar bilan suhbatlashishga taklif qilamiz.</p>
+            <a href="#admission">Ro'yxatdan o'tish →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission CTA -->
+    <section class="admission" id="admission">
+      <div class="admission__img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1100&q=80&auto=format&fit=crop" alt="Quvnoq bolalar" loading="lazy"></div>
+      <div class="admission__content reveal">
+        <span class="eyebrow">Qabul 2026–2027</span>
+        <h2>Porloq kelajak sari<br>sayohatni boshlang</h2>
+        <p>Farzandingiz ilhomlanadigan, qo'llab-quvvatlanadigan va maqsadlariga erishish uchun kuch oladigan jamoaga qo'shiling.</p>
+        <div class="hero__actions">
+          <button class="btn btn--gold" data-open-modal>Hujjat topshirish <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="btn btn--outline" data-open-modal><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Maktabga tashrif</button>
+        </div>
+      </div>
+      <svg class="admission__doodle" viewBox="0 0 200 200" aria-hidden="true"><rect x="50" y="60" width="100" height="120" rx="30"/><path d="M75 60V45a25 25 0 0 1 50 0v15M70 110h60v40H70zM30 40l20 10M160 30l-10 20M20 150l25-5"/><circle cx="170" cy="130" r="18"/></svg>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--light">
+          <svg class="logo__mark" viewBox="0 0 40 46" aria-hidden="true"><path d="M20 1 38 7v15c0 12-8 20-18 23C10 42 2 34 2 22V7z" fill="#0b1f4b" stroke="#f2a91d" stroke-width="2.5"/><text x="20" y="31" font-family="Playfair Display, Georgia, serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">B</text></svg>
+          <span class="logo__text"><strong>BOLAJON</strong><small>XUSUSIY MAKTABI</small></span>
+        </a>
+        <p class="footer__about">Bilimli avlod, porloq kelajak.<br>Ertangi kunni birga quramiz.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="m22 3-20 8 7 2 2 7 3-5 5 4z"/><path d="m9 13 8-6"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Tezkor havolalar</h4>
+        <ul><li><a href="#about">Biz haqimizda</a></li><li><a href="#programs">Ta'lim</a></li><li><a href="#admission">Qabul</a></li><li><a href="#campus">Maktab hayoti</a></li><li><a href="#news">Yangiliklar</a></li><li><a href="#contact">Aloqa</a></li></ul>
+      </div>
+      <div>
+        <h4>Resurslar</h4>
+        <ul><li><a href="#">Ota-onalar kabineti</a></li><li><a href="#">O'quvchi kirishi</a></li><li><a href="#">Dars jadvali</a></li><li><a href="#">Maktab qoidalari</a></li><li><a href="#">Bo'sh ish o'rinlari</a></li></ul>
+      </div>
+      <div>
+        <h4>Bog'lanish</h4>
+        <ul class="contact-list">
+          <li><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Toshkent sh., Yunusobod tumani, Bilim ko'chasi 12</li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+998712001122">+998 71 200 11 22</a></li>
+          <li><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:info@bolajon.uz">info@bolajon.uz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Yangiliklarga obuna</h4>
+        <p class="footer__about">Maktab yangiliklari va tadbirlaridan birinchi bo'lib xabardor bo'ling.</p>
+        <form class="subscribe" id="subscribe">
+          <input type="email" placeholder="Email manzilingiz" required aria-label="Email manzil">
+          <button type="submit" aria-label="Obuna bo'lish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </form>
+        <p class="subscribe__msg" id="subscribeMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="footer__bottom">© <span id="year">2026</span> Bolajon xususiy maktabi. Barcha huquqlar himoyalangan.</div>
+  </footer>
+
+  <!-- Application modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Qabulga ariza</h3>
+      <p>Ma'lumotlaringizni qoldiring — qabul bo'limi 24 soat ichida siz bilan bog'lanadi.</p>
+      <form id="applyForm">
+        <label>Ota-ona ismi<input type="text" name="parent" required></label>
+        <label>Telefon raqam<input type="tel" name="phone" placeholder="+998 __ ___ __ __" required></label>
+        <label>Farzandning yoshi / sinfi
+          <select name="grade" required>
+            <option value="">Tanlang</option>
+            <option>Maktabgacha (3–6 yosh)</option>
+            <option>Boshlang'ich (1–4 sinf)</option>
+            <option>O'rta (5–9 sinf)</option>
+            <option>Yuqori (10–11 sinf)</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn--gold btn--block">Yuborish</button>
+      </form>
+      <div class="modal__success" id="applySuccess" hidden>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+        <h3>Rahmat!</h3><p>Arizangiz qabul qilindi. Tez orada qo'ng'iroq qilamiz.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video modal -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog modal__dialog--video" role="dialog" aria-modal="true" aria-label="Maktab haqida video">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <div class="video-slides" id="videoSlides">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80&auto=format&fit=crop" alt="Dars jarayoni" class="active">
+        <img src="https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=1200&q=80&auto=format&fit=crop" alt="Laboratoriya">
+        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1200&q=80&auto=format&fit=crop" alt="Kutubxona">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80&auto=format&fit=crop" alt="Sport">
+        <span class="video-slides__caption">Bolajon maktabida bir kun</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

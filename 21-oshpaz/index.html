@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oshpaz Akmal Yo'ldoshev — Shaxsiy oshpaz va keytering</title>
+  <meta name="description" content="Oshpaz Akmal Yo'ldoshev: to'y va tadbirlar uchun keytering, uyga shaxsiy oshpaz, master-klasslar va milliy taomlar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%231a1410'/%3E%3Cpath d='M12 20a4 4 0 0 1 3-7 5 5 0 0 1 10 0 4 4 0 0 1 3 7v8H12z' fill='%23e8742a'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Oshpaz Akmal"><span class="logo__hat">👨‍🍳</span><span><b>Chef Akmal</b><small>SHAXSIY OSHPAZ</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#menu">Menyu</a>
+        <a href="#catering">Keytering</a>
+        <a href="#classes">Master-klass</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--orange header__cta" data-order>Buyurtma</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="script">Assalomu alaykum!</p>
+          <h1>Har bir taom —<br><em>bir hikoya</em></h1>
+          <p>Men Akmal — 15 yillik tajribaga ega oshpaz. Toshkentdagi "Plov Center" va Dubaydagi restoranlarda ishlaganman. Endi to'y, tadbir va uyingizdagi dasturxon uchun pishiraman.</p>
+          <div class="hero__actions"><a href="#catering" class="btn btn--orange">Keyteringni hisoblash</a><a href="#menu" class="btn btn--line">Menyuni ko'rish</a></div>
+          <div class="hero__badges"><span>🏆 "Yilning oshpazi 2024"</span><span>🍽 500+ tadbir</span><span>⭐ 4.9 / 5</span></div>
+        </div>
+        <div class="hero__portrait reveal">
+          <div class="plate"><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=800&q=80&auto=format&fit=crop&crop=top" alt="Oshpaz Akmal Yo'ldoshev"></div>
+          <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="head reveal"><p class="script">Nima qilaman</p><h2>Xizmatlarim</h2></div>
+        <div class="services">
+          <article class="svc reveal"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>To'y va tadbir keyteringi</h3><p>50 dan 1000 kishigacha — menyu, xizmat ko'rsatish va dasturxon bezagi bilan.</p><button class="link" data-goto="catering">Narxni hisoblash →</button></div></article>
+          <article class="svc reveal"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Uyga shaxsiy oshpaz</h3><p>Oilaviy kechki ovqat yoki mehmonlar uchun — uyingizda pishiraman va dasturxon tuzaman.</p><button class="link" data-order="Shaxsiy oshpaz">Buyurtma berish →</button></div></article>
+          <article class="svc reveal"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Master-klasslar</h3><p>Palov, manti, non va Yevropa oshxonasi sirlari — kichik guruhlarda.</p><button class="link" data-goto="classes">Jadvalni ko'rish →</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="menu">
+      <div class="container">
+        <div class="head reveal"><p class="script">Imzo taomlarim</p><h2>Menyu</h2></div>
+        <div class="tabs reveal" id="menuTabs"></div>
+        <div class="menu reveal" id="menuList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="catering">
+      <div class="container catering reveal">
+        <div>
+          <p class="script">Keytering kalkulyatori</p>
+          <h2>Tadbiringiz qancha turadi?</h2>
+          <p class="muted">Mehmonlar soni va menyu paketini tanlang — taxminiy narx va kerakli mahsulot hajmini darhol ko'rasiz.</p>
+          <form class="calc" id="calcForm">
+            <label>Mehmonlar soni: <b id="guestsOut">100</b><input type="range" id="guests" min="20" max="1000" step="10" value="100"></label>
+            <div class="packs" id="packs"></div>
+            <div class="extras">
+              <label><input type="checkbox" value="15000" data-name="Ofitsiantlar"> Ofitsiantlar xizmati <small>+15 000 / kishi</small></label>
+              <label><input type="checkbox" value="25000" data-name="Tort"> To'y torti <small>+25 000 / kishi</small></label>
+              <label><input type="checkbox" value="10000" data-name="Bezak"> Dasturxon bezagi <small>+10 000 / kishi</small></label>
+            </div>
+          </form>
+        </div>
+        <aside class="receipt">
+          <h3>Taxminiy hisob</h3>
+          <div id="receiptLines"></div>
+          <div class="receipt__total"><span>Jami</span><b id="total">0</b></div>
+          <p class="per" id="per"></p>
+          <div class="plov" id="plovInfo"></div>
+          <button class="btn btn--orange btn--block" data-order="Keytering">Shu hisob bilan buyurtma</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="classes">
+      <div class="container">
+        <div class="head reveal"><p class="script">Birga pishiramiz</p><h2>Master-klasslar jadvali</h2></div>
+        <div class="classes reveal" id="classList"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container gallery reveal">
+        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80&auto=format&fit=crop" alt="Olovli qozon" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80&auto=format&fit=crop" alt="Palov" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="Restoran dasturxoni" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=600&q=80&auto=format&fit=crop" alt="Tayyorlash" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80&auto=format&fit=crop" alt="Salat" loading="lazy">
+      </div>
+    </section>
+
+    <section class="container quote reveal" id="contact">
+      <p>"Oshpaz uchun eng katta mukofot — bo'shagan likopchalar va mehmonlarning tabassumi."</p>
+      <cite>— Akmal Yo'ldoshev</cite>
+      <div class="quote__actions"><button class="btn btn--orange" data-order>Buyurtma berish</button><a href="tel:+998909998877" class="btn btn--line">📞 +998 90 999 88 77</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo"><span class="logo__hat">👨‍🍳</span><span><b>Chef Akmal</b><small>SHAXSIY OSHPAZ</small></span></a><p>Toshkent va viloyatlar bo'ylab xizmat ko'rsataman.</p></div>
+      <div><h4>Aloqa</h4><p>📞 +998 90 999 88 77<br>✈ Telegram: @chef_akmal<br>◎ Instagram: @chef.akmal.uz</p></div>
+      <div><h4>Buyurtma</h4><p>Tadbirlar uchun — kamida 7 kun oldin.<br>Shaxsiy oshpaz — 2 kun oldin.</p></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Chef Akmal. Yoqimli ishtaha!</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Buyurtma</h3>
+      <p class="muted" id="modalNote"></p>
+      <form id="orderForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <label>Sana<input type="date" id="orderDate" required></label>
+        <label>Izoh<textarea rows="2" placeholder="Masalan: 150 kishi, to'y, Chilonzor"></textarea></label>
+        <button class="btn btn--orange btn--block" type="submit">Yuborish</button>
+      </form>
+      <div class="success" id="orderSuccess" hidden><div>🍽</div><h3>Rahmat!</h3><p class="muted">Menyuni kelishib olish uchun qo'ng'iroq qilaman.</p></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

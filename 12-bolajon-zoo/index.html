@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Zoo — Uy hayvonlari uchun zoomarket</title>
+  <meta name="description" content="Bolajon Zoo: it va mushuklar uchun ozuqa, o'yinchoqlar, aksessuarlar va parvarish vositalari — tez yetkazib berish bilan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231296db'%3E%3Cellipse cx='6' cy='9' rx='2.2' ry='2.8'/%3E%3Cellipse cx='10' cy='5' rx='2.2' ry='2.8'/%3E%3Cellipse cx='14' cy='5' rx='2.2' ry='2.8'/%3E%3Cellipse cx='18' cy='9' rx='2.2' ry='2.8'/%3E%3Cpath d='M12 11c-3 0-6 4-6 7 0 2 2 3 3.5 2.5 1.2-.4 1.8-.8 2.5-.8s1.3.4 2.5.8C16 21 18 20 18 18c0-3-3-7-6-7z'/%3E%3C/svg%3E">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="paw" viewBox="0 0 24 24"><ellipse cx="6" cy="9" rx="2.2" ry="2.8"/><ellipse cx="10" cy="5" rx="2.2" ry="2.8"/><ellipse cx="14" cy="5" rx="2.2" ry="2.8"/><ellipse cx="18" cy="9" rx="2.2" ry="2.8"/><path d="M12 11c-3 0-6 4-6 7 0 2 2 3 3.5 2.5 1.2-.4 1.8-.8 2.5-.8s1.3.4 2.5.8C16 21 18 20 18 18c0-3-3-7-6-7z"/></symbol></defs></svg>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info"><span>🚚 250 000 so'mdan ortiq xaridga bepul yetkazish</span><span class="hide-md">↺ 30 kunda oson qaytarish</span><span class="hide-md">🎧 24/7 yordam</span></div>
+      <div class="topbar__social"><span>Kuzating:</span><a href="#" aria-label="Telegram">✈</a><a href="#" aria-label="Instagram">◎</a></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__main">
+      <a href="#" class="logo" aria-label="Bolajon Zoo"><svg><use href="#paw"/></svg><span><b>Bolajon<i>Zoo</i></b><small>Baxtli hayvonlar, baxtli hayot.</small></span></a>
+      <form class="search" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Mahsulot qidiring..." aria-label="Qidiruv">
+        <select id="searchCat" aria-label="Kategoriya"><option value="all">Barcha kategoriyalar</option></select>
+        <button type="submit" aria-label="Qidirish"><svg viewBox="0 0 24 24" class="st"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      </form>
+      <button class="account" data-toast="Shaxsiy kabinet tez orada ishga tushadi"><svg viewBox="0 0 24 24" class="st"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span><small>Salom!</small><b>Kirish / Ro'yxatdan o'tish</b></span></button>
+      <button class="cart" id="cartBtn" aria-label="Savat"><span class="cart__icon"><svg viewBox="0 0 24 24" class="st"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><i id="cartCount">0</i></span><span class="cart__text"><small>Savatim</small><b id="cartSum">0 so'm</b></span></button>
+    </div>
+    <div class="navbar">
+      <div class="container navbar__inner">
+        <button class="catbtn" id="catBtn">☰ Kategoriyalar ▾</button>
+        <nav class="nav" id="nav" aria-label="Asosiy menyu">
+          <a href="#home" class="active">Bosh sahifa</a>
+          <a href="#bestsellers">Do'kon</a>
+          <a href="#dogs">Itlar</a>
+          <a href="#cats">Mushuklar</a>
+          <a href="#flash">Aksiyalar</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
+        <a href="#flash" class="deals">⚡ Bugungi chegirmalar</a>
+        <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero__text">
+        <span class="wow">🐾 AJOYIB TAKLIFLAR!</span>
+        <h1>Uy hayvoningizni<br><span>har kuni sevib yashang!</span></h1>
+        <p>Ozuqa, o'yinchoqlar, shirinliklar va yana ko'p narsalar — mo'ynali do'stlaringiz uchun.</p>
+        <a href="#bestsellers" class="btn btn--blue">Xarid qilish →</a>
+      </div>
+      <div class="hero__badge"><small>GACHA</small><b>30%</b><span>CHEGIRMA</span></div>
+      <div class="hero__pets">
+        <img class="p1" src="https://images.unsplash.com/photo-1560743641-3914f2c45636?w=900&q=80&auto=format&fit=crop" alt="Ikki quvnoq it">
+        <img class="p2" src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&q=80&auto=format&fit=crop" alt="Mushukcha">
+        <span class="hero__heart">❤</span>
+      </div>
+    </section>
+
+    <section class="block" id="categories">
+      <div class="block__head"><h2><svg><use href="#paw"/></svg> Kategoriyalar</h2><button class="more" data-cat="all">Barchasi →</button></div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <section class="block" id="bestsellers">
+      <div class="block__head"><h2>🏆 <span id="gridTitle">Eng ko'p sotilganlar</span></h2><button class="more" data-cat="all">Barchasi →</button></div>
+      <div class="grid grid--6" id="bestGrid"></div>
+    </section>
+
+    <section class="promos">
+      <a href="#dogs" class="promo promo--blue"><div><span class="tag">YANGI</span><h3>O'yinchoqlar kolleksiyasi</h3><p>Qiziqarli, xavfsiz va chidamli</p><em>Ko'rish</em></div><img src="https://images.unsplash.com/photo-1591946614720-90a587da4a36?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+      <a href="#dogs" class="promo promo--teal"><div><h3>Kerakli jihozlar</h3><p>Hammasi bir joyda</p><em>Xarid</em></div><img src="https://images.unsplash.com/photo-1587764379873-97837921fd44?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+      <a href="#cats" class="promo promo--lilac"><div><h3>Sog'lom ozuqa</h3><p>Baxtli hayot uchun</p><em>Xarid</em></div><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"></a>
+      <a href="#flash" class="promo promo--peach"><div><h3>Bepul yetkazish</h3><p>250 000 so'mdan ortiq</p><em>🚚 BEPUL</em></div></a>
+    </section>
+
+    <section class="flash" id="flash">
+      <div><small>Cheklangan taklif</small><h2>FLESH SAVDO</h2></div>
+      <p class="flash__off">40% GACHA<br><small>tanlangan mahsulotlarga!</small></p>
+      <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&q=80&auto=format&fit=crop" alt="Korgi" loading="lazy">
+      <div class="flash__timer"><small>Shoshiling! Tugashiga:</small><div class="timer"><span><b data-t="d">00</b>kun</span><span><b data-t="h">00</b>soat</span><span><b data-t="m">00</b>daq</span><span><b data-t="s">00</b>son</span></div><button class="btn btn--purple" data-cat="sale">Taklifni olish →</button></div>
+    </section>
+
+    <div class="two">
+      <section class="block" id="dogs"><div class="block__head"><h2>🐶 Itlar uchun</h2><button class="more" data-cat="it">Barchasi →</button></div><div class="grid grid--4" id="dogGrid"></div></section>
+      <section class="block" id="cats"><div class="block__head"><h2>🐱 Mushuklar uchun</h2><button class="more" data-cat="mushuk">Barchasi →</button></div><div class="grid grid--4" id="catGrid"></div></section>
+    </div>
+
+    <section class="block">
+      <div class="block__head"><h2><svg><use href="#paw"/></svg> Nega Bolajon Zoo?</h2></div>
+      <div class="why">
+        <div><span>🏅</span><p><b>Premium sifat</b><small>Sinab tanlangan mahsulotlar</small></p></div>
+        <div><span>🏷️</span><p><b>Hamyonbop narx</b><small>Har bir egaga qulay</small></p></div>
+        <div><span>🚚</span><p><b>Tez yetkazish</b><small>Toshkent bo'ylab 2 soatda</small></p></div>
+        <div><span>🔒</span><p><b>Xavfsiz to'lov</b><small>100% himoyalangan</small></p></div>
+        <div><span>💗</span><p><b>Baxtli hayvonlar</b><small>Minglab oilalar sevgan</small></p></div>
+      </div>
+    </section>
+
+    <section class="block" id="blog">
+      <div class="block__head"><h2>📰 So'nggi maqolalar</h2><button class="more" data-toast="Blog sahifasi tez orada">Barchasi →</button></div>
+      <div class="blogs">
+        <article class="post"><img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Itingiz bilan uyda o'ynash uchun 10 ta o'yin</h3><p>Kuchukchangizni faol va quvnoq saqlang.</p><button class="read" data-toast="Maqola tez orada chop etiladi">Batafsil →</button></div></article>
+        <article class="post"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Har yoshdagi mushuk uchun eng yaxshi ozuqa</h3><p>Mushugingiz sog'lig'i uchun maslahatlar.</p><button class="read" data-toast="Maqola tez orada chop etiladi">Batafsil →</button></div></article>
+        <article class="post"><img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?w=400&q=80&auto=format&fit=crop" alt="" loading="lazy"><div><h3>Uy hayvoningizni baxtli va sog'lom saqlash</h3><p>Mustahkam do'stlik uchun oddiy sirlar.</p><button class="read" data-toast="Maqola tez orada chop etiladi">Batafsil →</button></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__box">
+      <div><a href="#" class="logo"><svg><use href="#paw"/></svg><span><b>Bolajon<i>Zoo</i></b></span></a><p>Uy hayvoningizga kerak bo'lgan hamma narsa bir joyda. Sifat, mehr va g'amxo'rlik bilan eshigingizgacha.</p></div>
+      <div><h4>Do'kon</h4><ul><li><a href="#dogs">It ozuqasi</a></li><li><a href="#cats">Mushuk ozuqasi</a></li><li><a href="#bestsellers">O'yinchoqlar</a></li><li><a href="#bestsellers">Aksessuarlar</a></li></ul></div>
+      <div><h4>Mijozlarga</h4><ul><li><a href="#">Mening hisobim</a></li><li><a href="#">Buyurtmani kuzatish</a></li><li><a href="#">Qaytarish</a></li><li><a href="#">Savollar</a></li></ul></div>
+      <div><h4>Ma'lumot</h4><ul><li><a href="#blog">Blog</a></li><li><a href="#">Biz haqimizda</a></li><li><a href="#">Maxfiylik siyosati</a></li><li>📞 +998 71 333 44 55</li></ul></div>
+      <div><h4>To'lov usullari</h4><div class="pay"><span>Click</span><span>Payme</span><span>Uzcard</span><span>Humo</span><span>Visa</span></div><img class="footer__cat" src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy"></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Bolajon Zoo. Barcha huquqlar himoyalangan. 🐾</p>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__head"><h3>🛒 Savatingiz</h3><button data-close aria-label="Yopish">×</button></div>
+    <ul class="drawer__list" id="drawerList"></ul>
+    <div class="drawer__foot"><div class="drawer__total"><span>Jami:</span><b id="drawerTotal">0 so'm</b></div><button class="btn btn--blue btn--block" id="checkout">Buyurtma berish</button></div>
+  </aside>
+  <div class="overlay" id="overlay" data-close></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Malika Karimova — Stomatolog</title>
+  <meta name="description" content="Stomatolog Dr. Malika Karimova: tish oqartirish, implant, breket, estetik restavratsiya va og'riqsiz davolash.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M12 4c-5 0-8 4-8 9 0 6 3 8 4 14 1 5 2 9 5 9s3-6 4-9c1-2 2-3 3-3s2 1 3 3c1 3 1 9 4 9s4-4 5-9c1-6 4-8 4-14 0-5-3-9-8-9-3 0-5 2-8 2s-5-2-8-2z' fill='%2314b8a6'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Dr. Malika Karimova"><span class="logo__tooth">🦷</span><span><b>Dr. Malika</b><small>stomatolog</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#results">Natijalar</a>
+        <a href="#calc">Narx hisoblash</a>
+        <a href="#faq">Savollar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <a href="tel:+998977771122" class="hphone">📞 +998 97 777 11 22</a>
+      <button class="btn btn--teal header__cta" data-book>Yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <span class="badge">✨ Og'riqsiz stomatologiya</span>
+          <h1>Tabassumingiz — <span>eng yaxshi</span> tashrif qog'ozingiz</h1>
+          <p>Salom, men Malika Karimova — 10 yillik tajribaga ega stomatolog. Zamonaviy anesteziya va raqamli texnologiyalar bilan sizni qo'rquvsiz davolayman.</p>
+          <div class="hero__actions">
+            <button class="btn btn--teal" data-book>Bepul ko'rikka yozilish</button>
+            <a href="#results" class="btn btn--soft">Natijalarni ko'rish</a>
+          </div>
+          <ul class="hero__facts"><li><b data-count="10">0</b><span>+ yil</span><small>tajriba</small></li><li><b data-count="8000">0</b><span>+</span><small>tabassum</small></li><li><b data-count="1500">0</b><span>+</span><small>implant</small></li></ul>
+        </div>
+        <div class="hero__media reveal">
+          <div class="blob"></div>
+          <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=900&q=80&auto=format&fit=crop&crop=top" alt="Stomatolog Dr. Malika Karimova">
+          <div class="card c1"><span>😁</span><div><b>4.9 ★</b><small>620+ sharh</small></div></div>
+          <div class="card c2"><span>🛡️</span><div><b>Kafolat</b><small>implantlarga 10 yil</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="head reveal"><span class="badge">Xizmatlar</span><h2>Sog'lom va chiroyli tabassum uchun hammasi</h2></div>
+        <div class="services" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--mint" id="results">
+      <div class="container results">
+        <div class="reveal">
+          <span class="badge">Oldin / Keyin</span>
+          <h2>Natijani o'zingiz ko'ring</h2>
+          <p class="muted">Slayderni suring — professional oqartirish natijasini solishtiring. Bitta seans, 60 daqiqa, 8 tongacha oqroq.</p>
+          <div class="tabs" id="caseTabs"><button class="active" data-case="0">Oqartirish</button><button data-case="1">Elayner</button><button data-case="2">Tozalash</button></div>
+          <p class="case-note" id="caseNote"></p>
+        </div>
+        <div class="ba reveal" id="ba">
+          <img class="ba__after" id="baAfter" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1000&q=80&auto=format&fit=crop" alt="Keyin">
+          <div class="ba__before" id="baBefore"><img id="baBeforeImg" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1000&q=80&auto=format&fit=crop" alt="Oldin"></div>
+          <span class="ba__label ba__label--l">OLDIN</span><span class="ba__label ba__label--r">KEYIN</span>
+          <div class="ba__handle" id="baHandle"><span>⟷</span></div>
+          <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Oldin va keyin solishtirish">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calc">
+      <div class="container calc reveal">
+        <div>
+          <span class="badge">Narx kalkulyatori</span>
+          <h2>Davolash qancha turadi?</h2>
+          <p class="muted">Kerakli xizmatlarni tanlang — taxminiy narxni darhol ko'rasiz. Aniq reja bepul ko'rikdan so'ng tuziladi.</p>
+          <div class="calc__list" id="calcList"></div>
+        </div>
+        <aside class="calc__total">
+          <small>Taxminiy summa</small>
+          <b id="calcSum">0 so'm</b>
+          <div class="calc__lines" id="calcLines"><p class="muted">Hali hech narsa tanlanmadi</p></div>
+          <label class="installment"><input type="checkbox" id="installment"> Bo'lib to'lash (6 oy, 0%)</label>
+          <p class="monthly" id="monthly" hidden></p>
+          <button class="btn btn--teal btn--block" data-book>Shu reja bilan yozilish</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--mint">
+      <div class="container team reveal">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=900&q=80&auto=format&fit=crop" alt="Davolash jarayoni" loading="lazy">
+        <div>
+          <span class="badge">Nega meni tanlashadi</span>
+          <h2>Qo'rquvsiz davolanish</h2>
+          <ul class="why">
+            <li><span>💉</span><div><b>Og'riqsiz anesteziya</b><small>Kompyuterli "The Wand" tizimi — igna sezilmaydi</small></div></li>
+            <li><span>🖥️</span><div><b>Raqamli rejalashtirish</b><small>3D skaner — natijani oldindan ko'rasiz</small></div></li>
+            <li><span>🧼</span><div><b>Steril xavfsizlik</b><small>B-klass avtoklav, bir martalik asboblar</small></div></li>
+            <li><span>🧒</span><div><b>Bolalar ham sevadi</b><small>Multfilm, sovg'a va sabr bilan</small></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="head reveal"><span class="badge">Savol-javob</span><h2>Ko'p so'raladigan savollar</h2></div>
+        <div class="faq reveal" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="container cta reveal" id="contact">
+      <div><h2>Bepul ko'rik va konsultatsiya</h2><p>Birinchi tashrif — tekin. Panoramik rentgen 50% chegirma bilan.</p></div>
+      <div class="cta__actions"><button class="btn btn--white" data-book>Yozilish</button><a href="https://t.me/" class="btn btn--line">✈ Telegramda yozish</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo"><span class="logo__tooth">🦷</span><span><b>Dr. Malika</b><small>stomatolog</small></span></a><p>Toshkent, Yakkasaroy tumani, Shota Rustaveli 41, "Smile Studio"</p></div>
+      <div><h4>Ish vaqti</h4><p>Du–Sha: 09:00 – 20:00<br>Yakshanba: faqat shoshilinch</p></div>
+      <div><h4>Aloqa</h4><p><a href="tel:+998977771122">+998 97 777 11 22</a><br>Instagram: @dr.malika.smile</p></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Dr. Malika Karimova. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Qabulga yozilish 🦷</h3>
+      <form id="bookForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <label>Nima bezovta qilyapti?<select id="bookReason"><option>Bepul ko'rik</option><option>Tish og'rig'i</option><option>Oqartirish</option><option>Implant</option><option>Breket / elayner</option><option>Bola uchun</option></select></label>
+        <label>Qulay vaqt<select><option>Ertalab (09–12)</option><option>Tushdan keyin (12–16)</option><option>Kechqurun (16–20)</option></select></label>
+        <button type="submit" class="btn btn--teal btn--block">Yuborish</button>
+      </form>
+      <div class="success" id="bookSuccess" hidden><div>😁</div><h3>Rahmat!</h3><p class="muted">Tez orada qo'ng'iroq qilib, vaqtni tasdiqlaymiz.</p></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

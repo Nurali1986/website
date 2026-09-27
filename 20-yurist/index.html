@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherzod Qodirov — Advokat va notarius</title>
+  <meta name="description" content="Advokat va notarius Sherzod Qodirov: oilaviy va meros nizolari, uy-joy va mulk, biznes huquqi, jinoiy ishlar bo'yicha himoya, notarial xizmatlar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%230e1a2b'/%3E%3Cpath d='M20 8v24M12 12h16M8 22l4-10 4 10a4 4 0 0 1-8 0zM24 22l4-10 4 10a4 4 0 0 1-8 0zM14 32h12' stroke='%23c8a45d' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Sherzod Qodirov"><span class="logo__mark">SQ</span><span><b>Sherzod Qodirov</b><small>ADVOKAT · NOTARIUS</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#practice">Yo'nalishlar</a>
+        <a href="#notary">Notarial narxlar</a>
+        <a href="#process">Jarayon</a>
+        <a href="#faq">Savollar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--gold header__cta" data-consult>Konsultatsiya</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Litsenziya № 00417 · 18 yillik amaliyot</p>
+          <h1>Huquqlaringiz —<br><em>ishonchli qo'llarda</em></h1>
+          <p>Men — Sherzod Qodirov, advokat va xususiy notarius. Oilaviy, mulkiy, biznes va jinoiy ishlar bo'yicha himoya hamda notarial harakatlar — bitta idorada, bir kunda.</p>
+          <div class="hero__actions"><button class="btn btn--gold" data-consult>Bepul 15 daqiqalik konsultatsiya</button><a href="#practice" class="btn btn--line">Yo'nalishlar</a></div>
+          <div class="hero__stats">
+            <div><b data-count="18">0</b><small>yillik tajriba</small></div>
+            <div><b data-count="1400">0</b><small>yutilgan ish</small></div>
+            <div><b data-count="92">0</b><b>%</b><small>ijobiy natija</small></div>
+          </div>
+        </div>
+        <div class="hero__portrait">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=900&q=80&auto=format&fit=crop&crop=top" alt="Advokat Sherzod Qodirov">
+          <blockquote>"Qonun — hamma uchun bir xil. Mening vazifam — uning siz tomonda ishlashini ta'minlash."</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust__row"><span>⚖ O'zbekiston Advokatlar palatasi a'zosi</span><span>🏛 Adliya vazirligi litsenziyasi</span><span>🔒 Advokatlik siri kafolati</span><span>🌐 O'zbek · Rus · Ingliz</span></div>
+    </section>
+
+    <section class="section" id="practice">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Amaliyot yo'nalishlari</p><h2>Qaysi masalada yordam kerak?</h2></div>
+        <div class="practice" id="practiceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="notary">
+      <div class="container notary reveal">
+        <div>
+          <p class="eyebrow">Notarial xizmatlar</p>
+          <h2>Narxni oldindan biling</h2>
+          <p class="muted">Hujjat turini tanlang — davlat boji va xizmat haqi bilan umumiy summani hisoblab beraman. Summa BHM (bazaviy hisoblash miqdori) asosida hisoblanadi.</p>
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80&auto=format&fit=crop" alt="Hujjat imzolash" loading="lazy">
+        </div>
+        <form class="calc" id="calcForm">
+          <label>Hujjat turi<select id="docType"></select></label>
+          <label id="valueWrap">Shartnoma summasi (so'm)<input type="number" id="docValue" min="0" step="1000000" value="500000000"></label>
+          <label class="check"><input type="checkbox" id="urgent"> Shoshilinch (bugunning o'zida) +50%</label>
+          <label class="check"><input type="checkbox" id="visit"> Uyga / ofisga chiqish (+300 000 so'm)</label>
+          <div class="calc__out">
+            <div><span>Davlat boji</span><b id="outDuty">—</b></div>
+            <div><span>Xizmat haqi</span><b id="outFee">—</b></div>
+            <div class="sum"><span>Jami</span><b id="outTotal">—</b></div>
+          </div>
+          <p class="note">* Taxminiy hisob. Aniq summa hujjatlar ko'rib chiqilgach aytiladi.</p>
+          <button type="button" class="btn btn--gold btn--block" data-consult="notary">Notariusga yozilish</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Qanday ishlayman</p><h2>Aniq reja — xotirjam mijoz</h2></div>
+        <ol class="process reveal">
+          <li><span>I</span><h3>Konsultatsiya</h3><p>Vaziyatingizni tinglayman, hujjatlarni ko'raman va imkoniyatlarni ochiq aytaman.</p></li>
+          <li><span>II</span><h3>Strategiya</h3><p>Harakatlar rejasi, muddatlar va narxni yozma ravishda kelishamiz.</p></li>
+          <li><span>III</span><h3>Himoya</h3><p>Da'vo, muzokara, sud — har bosqichda sizni vakil qilaman.</p></li>
+          <li><span>IV</span><h3>Natija</h3><p>Hal qiluv qarorining ijrosigacha nazorat qilaman.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container cases reveal">
+        <div class="cases__img"><img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&q=80&auto=format&fit=crop" alt="Adolat ma'budasi haykali" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Amaliyotdan</p>
+          <h2>Ba'zi natijalar</h2>
+          <ul class="case-list">
+            <li><b>Meros nizosi</b><span>3 ta merosxo'r o'rtasida uy-joy taqsimoti — sudgacha kelishuv bitimi bilan hal qilindi.</span></li>
+            <li><b>Ishdan noqonuniy bo'shatish</b><span>Xodim lavozimiga tiklandi, 7 oylik majburiy ishsizlik haqi undirildi.</span></li>
+            <li><b>Biznes shartnomasi</b><span>Yetkazib beruvchidan 420 mln so'm qarzdorlik va penya undirildi.</span></li>
+          </ul>
+          <p class="note">* Har bir ish individual; oldingi natijalar kelajakdagi natijani kafolatlamaydi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Savol-javob</p><h2>Ko'p beriladigan savollar</h2></div>
+        <div class="faq reveal" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="container cta reveal" id="contact">
+      <div><h2>Muammoni kechiktirmang</h2><p>Huquqiy masalada har bir kun muhim. Bugun yozing — ertaga reja bilan chiqasiz.</p></div>
+      <div class="cta__actions"><button class="btn btn--gold" data-consult>Konsultatsiyaga yozilish</button><a href="tel:+998712005050" class="btn btn--line">📞 +998 71 200 50 50</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo"><span class="logo__mark">SQ</span><span><b>Sherzod Qodirov</b><small>ADVOKAT · NOTARIUS</small></span></a><p>Toshkent, Mirzo Ulug'bek tumani, Buyuk Ipak Yo'li 55, 2-qavat, 12-xona</p></div>
+      <div><h4>Qabul vaqti</h4><p>Du–Ju: 09:00 – 18:00<br>Shanba: 10:00 – 14:00 (oldindan yozilish)</p></div>
+      <div><h4>Aloqa</h4><p><a href="tel:+998712005050">+998 71 200 50 50</a><br><a href="mailto:info@qodirov-law.uz">info@qodirov-law.uz</a><br>Telegram: @qodirov_law</p></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Sherzod Qodirov. Saytdagi ma'lumot umumiy xarakterga ega va yuridik maslahat hisoblanmaydi.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Konsultatsiyaga yozilish</h3>
+      <form id="consultForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <label>Masala turi<select id="topic"></select></label>
+        <label>Qisqacha vaziyat (ixtiyoriy)<textarea rows="3" placeholder="Maxfiylik kafolatlanadi"></textarea></label>
+        <div class="seg"><label><input type="radio" name="fmt" value="Ofisda" checked><span>🏛 Ofisda</span></label><label><input type="radio" name="fmt" value="Onlayn"><span>💻 Onlayn</span></label></div>
+        <button class="btn btn--gold btn--block" type="submit">Yuborish</button>
+        <p class="note center">🔒 Advokatlik siri qonun bilan himoyalangan</p>
+      </form>
+      <div class="success" id="consultSuccess" hidden><div>⚖</div><h3>So'rovingiz qabul qilindi</h3><p class="muted">Ish kuni davomida siz bilan bog'lanaman.</p></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

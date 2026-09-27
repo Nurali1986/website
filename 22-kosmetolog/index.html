@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lola Nazarova — Kosmetolog</title>
+  <meta name="description" content="Kosmetolog Lola Nazarova: gidrafeysial, yuzni tozalash, pilinglar, mikroneedling, pigmentatsiya va husnbuzar davolash.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23fbf7f1' stroke='%23b8905a'/%3E%3Ctext x='20' y='27' font-family='Georgia' font-size='18' fill='%23b8905a' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>📍 Toshkent, Yakkasaroy, Bobur 22</span>
+      <span>✨ Yangi mijozlarga birinchi protsedura −20%</span>
+      <a href="tel:+998901110022" class="hide-sm">📞 +998 90 111 00 22</a>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Lola Nazarova"><svg viewBox="0 0 40 48" aria-hidden="true"><path d="M20 4c-6 6-8 14-4 22 2 4 2 8 0 12M20 4c6 6 8 14 4 22-2 4-2 8 0 12M8 30c4 0 8 2 12 8 4-6 8-8 12-8" fill="none" stroke="#b8905a" stroke-width="1.6" stroke-linecap="round"/></svg><span><b>LOLA NAZAROVA</b><small>KOSMETOLOG</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#treatments">Protseduralar</a>
+        <a href="#quiz">Teri testi</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#plans">Abonementlar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--gold header__cta" data-book>Yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Sog'lom teri. Ishonchli siz.</p>
+          <h1>Teringizga<br><em>nafis parvarish</em></h1>
+          <p>Men Lola — sertifikatlangan kosmetolog. Teringiz turiga va maqsadingizga moslangan, isbotlangan protseduralar bilan tabiiy go'zallikni tiklayman.</p>
+          <div class="hero__actions"><button class="btn btn--gold" data-book>📅 Protseduraga yozilish</button><a href="#treatments" class="btn btn--line">Protseduralar</a></div>
+          <div class="rating"><span class="faces"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop" alt=""></span><span class="stars">★★★★★</span> 4.9 (600+ mamnun mijoz)</div>
+        </div>
+        <div class="hero__media reveal">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&q=80&auto=format&fit=crop&crop=top" alt="Kosmetolog Lola Nazarova">
+          <span class="halo"></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="features reveal">
+          <div><span>👩‍⚕️</span><b>Tibbiy ma'lumot</b><small>Dermatokosmetologiya diplomi</small></div>
+          <div><span>💧</span><b>Zamonaviy apparatlar</b><small>Xavfsiz va samarali</small></div>
+          <div><span>🌿</span><b>Individual yondashuv</b><small>Teringizga moslab</small></div>
+          <div><span>🛡️</span><b>Steril va gigiyenik</b><small>Yuqori standartlar</small></div>
+          <div><span>🤍</span><b>Yaxlit parvarish</b><small>Belgini emas, sababni</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="treatments">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Protseduralar</p><h2>Samarali parvarish. Chiroyli natija.</h2></div>
+        <div class="treat" id="treatGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="quiz">
+      <div class="container quiz reveal">
+        <div class="quiz__intro">
+          <p class="eyebrow">Bepul teri testi</p>
+          <h2>Teringiz nimaga muhtoj?</h2>
+          <p class="muted">4 ta savolga javob bering — sizga mos protseduralarni tavsiya qilaman.</p>
+          <div class="progress"><span id="quizBar"></span></div>
+          <small class="muted" id="quizStep">1 / 4</small>
+        </div>
+        <div class="quiz__box" id="quizBox"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <div class="about__video"><img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1000&q=80&auto=format&fit=crop" alt="Kabinet" loading="lazy"><button class="play" id="tourBtn" aria-label="Kabinet bo'ylab sayohat">▶</button></div>
+        <div>
+          <p class="eyebrow">Men haqimda</p>
+          <h2>Ilm va parvarish uchrashgan joy</h2>
+          <p class="muted">Toshkent tibbiyot akademiyasini, keyin Seuldagi estetik kosmetologiya kurslarini tamomlaganman. 10 yildan beri har bir mijozga — teri tahlili, aniq reja va uyda parvarish bo'yicha yo'riqnoma beraman.</p>
+          <div class="stats">
+            <div><b data-count="10">0</b><b>+</b><small>yil tajriba</small></div>
+            <div><b data-count="5">0</b><b>K+</b><small>mamnun mijoz</small></div>
+            <div><b data-count="15">0</b><b>+</b><small>sertifikat</small></div>
+            <div><b data-count="98">0</b><b>%</b><small>qayta keladi</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="plans">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Abonementlar</p><h2>Muntazam parvarish — tejamkor</h2></div>
+        <div class="plans reveal">
+          <article><h3>Glow</h3><p class="muted">Oyiga 1 marta</p><b>590 000<small> so'm/oy</small></b><ul><li>Gidrafeysial yoki tozalash</li><li>Teri tahlili</li><li>−10% kosmetikaga</li></ul><button class="btn btn--line btn--block" data-book="Glow abonementi">Tanlash</button></article>
+          <article class="featured"><span class="ribbon">Eng ommabop</span><h3>Radiance</h3><p class="muted">Oyiga 2 marta</p><b>1 090 000<small> so'm/oy</small></b><ul><li>2 ta istalgan protsedura</li><li>Uyda parvarish rejasi</li><li>−15% kosmetikaga</li><li>Tug'ilgan kun sovg'asi</li></ul><button class="btn btn--gold btn--block" data-book="Radiance abonementi">Tanlash</button></article>
+          <article><h3>Lumière</h3><p class="muted">Cheksiz konsultatsiya</p><b>1 890 000<small> so'm/oy</small></b><ul><li>4 ta protsedura</li><li>Mikroneedling kursi</li><li>−20% kosmetikaga</li><li>Ustuvor yozilish</li></ul><button class="btn btn--line btn--block" data-book="Lumière abonementi">Tanlash</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="head reveal"><p class="eyebrow">Mijozlar fikri</p><h2>Ular nima deydi</h2></div>
+        <div class="reviews reveal">
+          <blockquote><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt=""><span class="stars">★★★★★</span><p>"Lola teri holatimni butunlay o'zgartirdi. Natija haqiqiy!"</p><cite>— Dilnoza</cite></blockquote>
+          <blockquote><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt=""><span class="stars">★★★★★</span><p>"Eng yaxshi kosmetolog! Professional, e'tiborli va samarali."</p><cite>— Aziza</cite></blockquote>
+          <blockquote><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt=""><span class="stars">★★★★★</span><p>"Husnbuzar izlarim deyarli yo'qoldi. Rahmat, Lola!"</p><cite>— Sevinch</cite></blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--light"><svg viewBox="0 0 40 48" aria-hidden="true"><path d="M20 4c-6 6-8 14-4 22 2 4 2 8 0 12M20 4c6 6 8 14 4 22-2 4-2 8 0 12M8 30c4 0 8 2 12 8 4-6 8-8 12-8" fill="none" stroke="#d9b98a" stroke-width="1.6" stroke-linecap="round"/></svg><span><b>LOLA NAZAROVA</b><small>KOSMETOLOG</small></span></a><p>Nafis parvarish. Tabiiy go'zallik.</p></div>
+      <div><h4>Protseduralar</h4><ul id="footerList"></ul></div>
+      <div><h4>Aloqa</h4><ul><li>📍 Yakkasaroy, Bobur ko'chasi 22</li><li>📞 +998 90 111 00 22</li><li>◎ @lola.cosmetology</li><li>🕘 Du–Sha 10:00 – 20:00</li></ul></div>
+      <div><h4>Yangiliklar</h4><p>Teri parvarishi bo'yicha maslahatlar va aksiyalar.</p><form class="subscribe" id="subscribe"><input type="email" placeholder="Email" required aria-label="Email"><button>Obuna</button></form></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Lola Nazarova. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

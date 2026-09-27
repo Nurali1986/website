@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Farrux Ergashev — Dermatolog</title>
+  <meta name="description" content="Dermatolog Dr. Farrux Ergashev: husnbuzar, ekzema, psoriaz, soch to'kilishi, xollarni dermatoskopiya bilan tekshirish va onlayn konsultatsiya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%235b3f8c'/%3E%3Ccircle cx='20' cy='20' r='8' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3Ccircle cx='20' cy='20' r='2.5' fill='%23f3b8d0'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Dr. Farrux Ergashev"><span class="logo__mark"></span><span><b>Dr. Ergashev</b><small>dermatolog · trixolog</small></span></a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#conditions">Kasalliklar</a>
+        <a href="#abcde">Xolni tekshirish</a>
+        <a href="#online">Onlayn</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button class="btn btn--plum header__cta" data-book>Qabulga yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <span class="pill">🔬 Dermatoskopiya · Trixoskopiya</span>
+          <h1>Teringiz ham <span>gapiradi</span>. Men uni tinglayman.</h1>
+          <p>Husnbuzardan tortib xollarni tekshirishgacha — aniq tashxis, dalillarga asoslangan davolash va sizga tushunarli reja.</p>
+          <div class="hero__actions"><button class="btn btn--plum" data-book>Qabulga yozilish</button><a href="#online" class="btn btn--soft">📷 Onlayn konsultatsiya</a></div>
+          <div class="kpis"><div><b data-count="12">0</b>+<small>yil amaliyot</small></div><div><b data-count="30">0</b>K+<small>bemor</small></div><div><b data-count="9000">0</b>+<small>dermatoskopiya</small></div></div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="rings"><span></span><span></span><span></span></div>
+          <img src="https://images.unsplash.com/photo-1612531386530-97286d97c2d2?w=900&q=80&auto=format&fit=crop&crop=top" alt="Dermatolog Dr. Farrux Ergashev">
+          <div class="chip c1">🧴 Individual reja</div>
+          <div class="chip c2">📱 Telegramda nazorat</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="conditions">
+      <div class="container">
+        <div class="head reveal"><span class="pill">Nimani davolayman</span><h2>Teri, soch va tirnoq kasalliklari</h2></div>
+        <div class="cond reveal">
+          <div class="cond__tabs" id="condTabs" role="tablist"></div>
+          <div class="cond__panel" id="condPanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lav" id="abcde">
+      <div class="container abcde reveal">
+        <div>
+          <span class="pill">ABCDE qoidasi</span>
+          <h2>Xolingiz xavflimi? O'zingiz tekshiring</h2>
+          <p class="muted">Har bir belgini bosib, xolingizga mos kelganlarini belgilang. Bu tashxis emas — faqat shifokorga murojaat qilish kerakligini tushunishga yordam beradi.</p>
+          <div class="letters" id="letters"></div>
+        </div>
+        <aside class="verdict" id="verdict"></aside>
+      </div>
+    </section>
+
+    <section class="section" id="online">
+      <div class="container online reveal">
+        <div>
+          <span class="pill">Onlayn konsultatsiya</span>
+          <h2>Rasm yuboring — 24 soatda javob</h2>
+          <ol class="steps"><li><b>Rasm tanlang</b><span>Kunduzgi yorug'likda, yaqindan va uzoqdan</span></li><li><b>Qisqacha yozing</b><span>Qachondan beri, qichishadimi, o'zgardimi</span></li><li><b>Javob oling</b><span>Tavsiya yoki kabinetga yozilish</span></li></ol>
+          <p class="price">Narxi: <b>150 000 so'm</b> · to'lov javobdan keyin</p>
+        </div>
+        <form class="upload" id="uploadForm">
+          <label class="drop" id="drop"><input type="file" id="file" accept="image/*" multiple><span id="dropText">📷 Rasmni shu yerga tashlang yoki bosing<br><small>JPG/PNG, 3 tagacha</small></span><div class="thumbs" id="thumbs"></div></label>
+          <label>Ismingiz<input required></label>
+          <label>Telefon / Telegram<input required placeholder="+998 __ ___ __ __"></label>
+          <label>Tavsif<textarea rows="3" placeholder="Masalan: 2 oydan beri qo'limda qizil dog', qichishadi"></textarea></label>
+          <button class="btn btn--plum btn--block">Yuborish</button>
+          <p class="note">🔒 Namuna sayt: rasm faqat brauzeringizda ko'rsatiladi va hech qayerga yuborilmaydi.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--lav" id="about">
+      <div class="container about reveal">
+        <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=900&q=80&auto=format&fit=crop" alt="Qabul" loading="lazy">
+        <div>
+          <span class="pill">Men haqimda</span>
+          <h2>Dalillarga asoslangan dermatologiya</h2>
+          <p class="muted">Toshkent pediatriya tibbiyot institutini, so'ng Moskvadagi dermatovenerologiya ordinaturasini tamomlaganman. Yevropa dermatologlar akademiyasi (EADV) a'zosiman. Keraksiz dori va "mo''jizaviy" kremlarsiz — faqat samarasi isbotlangan davolash.</p>
+          <ul class="creds"><li>🎓 Tibbiyot fanlari nomzodi</li><li>🌍 EADV a'zosi</li><li>🔬 Raqamli dermatoskop FotoFinder</li><li>🗣 O'zbek, rus, ingliz</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container cta reveal">
+        <div><h2>Teringiz kutib turmaydi</h2><p>Birlamchi qabul — 250 000 so'm (dermatoskopiya bilan). Takroriy — 150 000 so'm.</p></div>
+        <div class="cta__actions"><button class="btn btn--white" data-book>Qabulga yozilish</button><a class="btn btn--ghost" href="tel:+998998887766">📞 +998 99 888 77 66</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo logo--light"><span class="logo__mark"></span><span><b>Dr. Ergashev</b><small>dermatolog · trixolog</small></span></a></div>
+      <div><h4>Manzil</h4><p>Toshkent, Mirobod, Taras Shevchenko 20, "DermaLab" klinikasi</p></div>
+      <div><h4>Qabul vaqti</h4><p>Du, Cho, Ju: 14:00–20:00<br>Se, Pa, Sha: 09:00–14:00</p></div>
+      <div><h4>Aloqa</h4><p>+998 99 888 77 66<br>Telegram: @dr_ergashev</p></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Dr. Farrux Ergashev. Saytdagi ma'lumot shifokor ko'rigini almashtirmaydi.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Qabulga yozilish</h3>
+      <form id="bookForm">
+        <label>Ismingiz<input required></label>
+        <label>Telefon<input type="tel" required placeholder="+998 __ ___ __ __"></label>
+        <label>Muammo<select id="bookTopic"></select></label>
+        <label>Qulay kun<input type="date" id="bookDate" required></label>
+        <button class="btn btn--plum btn--block">Yuborish</button>
+      </form>
+      <div class="ok" id="bookOk" hidden><div>💜</div><h3>Rahmat!</h3><p class="muted">Administrator qo'ng'iroq qilib vaqtni tasdiqlaydi. Qabulga kosmetikasiz kelishingizni so'rayman.</p></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Tur — Dunyo bo'ylab sayohat</title>
+  <meta name="description" content="Bolajon Tur agentligi: dunyoning eng go'zal yo'nalishlariga eksklyuziv tur paketlar, aviachiptalar va mehmonxonalar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 30 60 6 44 58 30 38z' fill='%231f7ae0'/%3E%3Cpath d='M30 38 60 6 22 34z' fill='%2393c2ff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon Tur">
+        <svg class="logo__plane" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 30 60 6 44 58 30 38z" fill="#fff"/><path d="M30 38 60 6 22 34z" fill="#cfe3ff"/><path d="M30 38 26 52l8-9" fill="#a9ccff"/></svg>
+        <span class="logo__text"><strong>BOLAJON TUR</strong><small>DUNYO BO'YLAB</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="nav__link active">Bosh sahifa</a>
+        <a href="#packages" class="nav__link">Paketlar</a>
+        <a href="#destinations" class="nav__link">Yo'nalishlar</a>
+        <a href="#pricing" class="nav__link">Narxlar</a>
+        <a href="#how" class="nav__link">Bron qilish</a>
+        <a href="#contact" class="nav__link">Aloqa</a>
+      </nav>
+      <a href="#contact" class="signin">Kirish <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></a>
+      <button class="burger" id="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1><span class="big">SAYOHAT</span><span class="sub">DUNYO BO'YLAB</span></h1>
+          <p class="script">Kashf et. Orzu qil. Sayohat qil.</p>
+          <p class="lead">Dunyoning eng go'zal yo'nalishlariga eksklyuziv tur paketlar — O'zbekistondan to'g'ridan-to'g'ri.</p>
+          <a href="#packages" class="btn btn--white">Paketlarni ko'rish <svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/></svg></a>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <svg class="trail" viewBox="0 0 400 260"><path d="M10 250C60 210 120 200 150 150c25-45-10-90-45-70-40 22-5 90 60 80 60-10 120-80 200-120"/></svg>
+          <svg class="plane" viewBox="0 0 200 140">
+            <path d="M5 70 195 5 140 135 95 92z" fill="#fff"/>
+            <path d="M95 92 195 5 70 84z" fill="#dcebff"/>
+            <path d="M95 92 82 128l30-22z" fill="#b6d4ff"/>
+            <path d="M5 70 70 84 195 5z" fill="#f4f9ff"/>
+          </svg>
+          <div class="landmarks">
+            <svg viewBox="0 0 60 160"><path d="M30 2 34 40h-8zM24 40h12l6 50H18zM16 90h28l10 68H6zM22 158c0-16 16-16 16 0" /></svg>
+            <svg viewBox="0 0 60 160"><path d="M22 20h16v10H22zM26 6h8l2 14H24zM30 0v6M18 30h24v128H18zM24 42h12v14H24z"/></svg>
+            <svg viewBox="0 0 80 160"><path d="M10 158V60C30 60 60 30 60 2c0 40 14 80 14 156z"/><path d="M10 60v-6h6"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="container">
+        <div class="search">
+          <div class="search__tabs" role="tablist">
+            <button class="tab active" data-tab="flight" role="tab"><svg viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>Aviachipta</button>
+            <button class="tab" data-tab="hotel" role="tab"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg>Mehmonxona</button>
+            <button class="tab" data-tab="car" role="tab"><svg viewBox="0 0 24 24"><path d="M5 17H3v-5l2-5h14l2 5v5h-2M5 12h14"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></svg>Avtomobil</button>
+            <button class="tab" data-tab="tour" role="tab"><svg viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2M13 17v2M13 11v2"/></svg>Ekskursiya</button>
+          </div>
+          <form class="search__form" id="searchForm">
+            <label class="field"><span id="fromLabel">Qayerdan</span><input id="from" value="Toshkent, O'zbekiston" required></label>
+            <button type="button" class="swap" id="swap" aria-label="Almashtirish"><svg viewBox="0 0 24 24"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></button>
+            <label class="field"><span id="toLabel">Qayerga</span><input id="to" list="cities" placeholder="Shahar yoki davlat" value="Istanbul, Turkiya" required></label>
+            <label class="field"><span id="departLabel">Ketish</span><input type="date" id="depart" required></label>
+            <label class="field"><span id="returnLabel">Qaytish</span><input type="date" id="return"></label>
+            <label class="field"><span>Sayohatchilar</span>
+              <select id="travelers"><option>1 kattalar</option><option selected>2 kattalar</option><option>2 kattalar, 1 bola</option><option>2 kattalar, 2 bola</option><option>Guruh (5+)</option></select>
+            </label>
+            <button type="submit" class="btn btn--blue search__btn">Qidirish</button>
+          </form>
+          <datalist id="cities">
+            <option value="Istanbul, Turkiya"><option value="Dubay, BAA"><option value="Parij, Fransiya"><option value="Male, Maldiv orollari"><option value="Tokio, Yaponiya"><option value="Bali, Indoneziya"><option value="Qohira, Misr"><option value="Santorini, Gretsiya">
+          </datalist>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container features__grid">
+        <div class="feature reveal"><span class="feature__icon"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></span><div><h3>Eng yaxshi narx kafolati</h3><p>Arzonroq topsangiz — farqini qaytaramiz.</p></div></div>
+        <div class="feature reveal"><span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Xavfsiz bron qilish</h3><p>Ma'lumotlaringiz to'liq himoyada.</p></div></div>
+        <div class="feature reveal"><span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span><div><h3>24/7 qo'llab-quvvatlash</h3><p>Istalgan vaqtda yordamga tayyormiz.</p></div></div>
+        <div class="feature reveal"><span class="feature__icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><div><h3>Individual turlar</h3><p>Aynan siz uchun tuzilgan dastur.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="packages section" id="packages">
+      <div class="container">
+        <div class="panel">
+          <div class="panel__head">
+            <h2>Mashhur paketlar</h2>
+            <div class="filters" id="filters">
+              <button class="filter active" data-filter="all">Barchasi</button>
+              <button class="filter" data-filter="beach">Dengiz</button>
+              <button class="filter" data-filter="city">Shahar</button>
+              <button class="filter" data-filter="nature">Tabiat</button>
+            </div>
+          </div>
+          <div class="packages__grid" id="packagesGrid">
+            <article class="pkg reveal" data-type="beach"><div class="pkg__img"><img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80&auto=format&fit=crop" alt="Santorini" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Gretsiya orollari</h3><div class="pkg__meta"><span>📍 Santorini</span><span>🕓 6 kun / 5 tun</span></div><div class="pkg__foot"><div><strong>$1 299</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.8</span><button class="go" data-book="Gretsiya orollari" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="beach"><div class="pkg__img"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80&auto=format&fit=crop" alt="Maldiv orollari" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Maldiv jannati</h3><div class="pkg__meta"><span>📍 Maldiv</span><span>🕓 5 kun / 4 tun</span></div><div class="pkg__foot"><div><strong>$1 599</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.9</span><button class="go" data-book="Maldiv jannati" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="nature"><div class="pkg__img"><img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&q=80&auto=format&fit=crop" alt="Kanada tog'lari" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Kanada tog'lari</h3><div class="pkg__meta"><span>📍 Kanada</span><span>🕓 7 kun / 6 tun</span></div><div class="pkg__foot"><div><strong>$1 799</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.7</span><button class="go" data-book="Kanada tog'lari" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="city"><div class="pkg__img"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80&auto=format&fit=crop" alt="Yaponiya" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Yaponiya kashfiyoti</h3><div class="pkg__meta"><span>📍 Kioto</span><span>🕓 8 kun / 7 tun</span></div><div class="pkg__foot"><div><strong>$2 199</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.9</span><button class="go" data-book="Yaponiya kashfiyoti" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="city" hidden><div class="pkg__img"><img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&q=80&auto=format&fit=crop" alt="Istanbul" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Istanbul sirlari</h3><div class="pkg__meta"><span>📍 Turkiya</span><span>🕓 5 kun / 4 tun</span></div><div class="pkg__foot"><div><strong>$549</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.8</span><button class="go" data-book="Istanbul sirlari" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="beach" hidden><div class="pkg__img"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80&auto=format&fit=crop" alt="Bali" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Bali ekzotikasi</h3><div class="pkg__meta"><span>📍 Indoneziya</span><span>🕓 9 kun / 8 tun</span></div><div class="pkg__foot"><div><strong>$1 149</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.8</span><button class="go" data-book="Bali ekzotikasi" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="nature" hidden><div class="pkg__img"><img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&q=80&auto=format&fit=crop" alt="Kappadokiya" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Kappadokiya sharlari</h3><div class="pkg__meta"><span>📍 Turkiya</span><span>🕓 4 kun / 3 tun</span></div><div class="pkg__foot"><div><strong>$699</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.9</span><button class="go" data-book="Kappadokiya sharlari" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+            <article class="pkg reveal" data-type="city" hidden><div class="pkg__img"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80&auto=format&fit=crop" alt="Dubay" loading="lazy"><button class="like" aria-label="Sevimlilarga qo'shish"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></button></div><div class="pkg__body"><h3>Dubay hashamati</h3><div class="pkg__meta"><span>📍 BAA</span><span>🕓 6 kun / 5 tun</span></div><div class="pkg__foot"><div><strong>$899</strong><small>1 kishi uchun</small></div><span class="rate">★ 4.7</span><button class="go" data-book="Dubay hashamati" aria-label="Bron qilish"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></article>
+          </div>
+          <div class="center"><button class="link-more" id="showMore">Barcha paketlar <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg></button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <h2 class="title">Top yo'nalishlar</h2>
+        <div class="dest__grid">
+          <a href="#home" class="dest dest--tall reveal" data-city="Parij, Fransiya"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=80&auto=format&fit=crop" alt="Parij" loading="lazy"><span><b>Parij</b>Fransiya · 120+ tur</span></a>
+          <a href="#home" class="dest reveal" data-city="Dubay, BAA"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&q=80&auto=format&fit=crop" alt="Dubay" loading="lazy"><span><b>Dubay</b>BAA · 95+ tur</span></a>
+          <a href="#home" class="dest reveal" data-city="Qohira, Misr"><img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=700&q=80&auto=format&fit=crop" alt="Misr piramidalari" loading="lazy"><span><b>Qohira</b>Misr · 60+ tur</span></a>
+          <a href="#home" class="dest reveal" data-city="Istanbul, Turkiya"><img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=700&q=80&auto=format&fit=crop" alt="Istanbul" loading="lazy"><span><b>Istanbul</b>Turkiya · 150+ tur</span></a>
+          <a href="#home" class="dest reveal" data-city="Bali, Indoneziya"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=80&auto=format&fit=crop" alt="Bali" loading="lazy"><span><b>Bali</b>Indoneziya · 70+ tur</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="pricing__box">
+          <div class="pricing__intro">
+            <h2>Tarif rejalari</h2>
+            <span class="line"></span>
+            <svg class="pricing__plane" viewBox="0 0 200 140" aria-hidden="true"><path d="M5 70 195 5 140 135 95 92z" fill="#fff"/><path d="M95 92 195 5 70 84z" fill="#dcebff"/><path d="M95 92 82 128l30-22z" fill="#b6d4ff"/></svg>
+          </div>
+          <div class="plans">
+            <div class="plan reveal"><h3>Ekonom</h3><p>Aqlli sayohatchilar uchun</p><div class="price">$499<small>1 kishi uchun</small></div><ul><li>Ekonom klass reys</li><li>20 kg bagaj</li><li>Standart mehmonxona</li><li>Aeroport transferi</li></ul><button class="btn btn--outline" data-book="Ekonom tarif">Tanlash</button></div>
+            <div class="plan plan--popular reveal"><span class="ribbon">Eng ommabop</span><h3>Premium</h3><p>Qulaylik va shinamlik</p><div class="price">$899<small>1 kishi uchun</small></div><ul><li>Premium ekonom reys</li><li>25 kg bagaj</li><li>4 yulduzli mehmonxona</li><li>Aeroport transferi</li><li>Shahar bo'ylab tur</li></ul><button class="btn btn--blue" data-book="Premium tarif">Tanlash</button></div>
+            <div class="plan reveal"><h3>Biznes</h3><p>Hashamat va erkinlik</p><div class="price">$1 499<small>1 kishi uchun</small></div><ul><li>Biznes klass reys</li><li>30 kg bagaj</li><li>5 yulduzli mehmonxona</li><li>Aeroport transferi</li><li>Shahar turlari</li><li>Lounge zali</li></ul><button class="btn btn--outline" data-book="Biznes tarif">Tanlash</button></div>
+            <div class="plan reveal"><h3>Lyuks</h3><p>Eng oliy tajriba</p><div class="price">$2 499<small>1 kishi uchun</small></div><ul><li>Birinchi klass reys</li><li>35 kg bagaj</li><li>Premium villa</li><li>Shaxsiy transfer</li><li>Eksklyuziv tajribalar</li><li>24/7 konsyerj</li></ul><button class="btn btn--outline" data-book="Lyuks tarif">Tanlash</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to book -->
+    <section class="how" id="how">
+      <div class="container">
+        <div class="how__box">
+          <h2 class="title">Qanday bron qilish mumkin?</h2>
+          <div class="steps">
+            <div class="step reveal"><span class="step__icon"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><h3>1. Yo'nalishni tanlang</h3><p>Orzuingizdagi manzilni tanlang.</p></div></div>
+            <div class="step reveal"><span class="step__icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg></span><div><h3>2. Paketni tanlang</h3><p>Sizga mos tarifni belgilang.</p></div></div>
+            <div class="step reveal"><span class="step__icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><div><h3>3. To'lovni amalga oshiring</h3><p>Click, Payme yoki karta orqali.</p></div></div>
+            <div class="step reveal"><span class="step__icon"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></span><div><h3>4. Sayohatdan zavqlaning</h3><p>Chamadonni yig'ing — qolganini biz qilamiz!</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats + testimonials -->
+    <section class="bottom" id="contact">
+      <div class="container">
+        <div class="bottom__box">
+          <div class="counters">
+            <div><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/></svg><strong><span data-count="150">0</span>+</strong><small>Yo'nalishlar</small></div>
+            <div><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2.5 1-4.5 4-4.5 1.8 0 3 1 3 4.5"/></svg><strong><span data-count="10">0</span>K+</strong><small>Baxtli sayohatchilar</small></div>
+            <div><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/></svg><strong><span data-count="500">0</span>+</strong><small>Tur paketlar</small></div>
+            <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><strong>24/7</strong><small>Qo'llab-quvvatlash</small></div>
+          </div>
+          <div class="testimonials">
+            <span class="quote">“</span>
+            <div class="t-slides" id="tSlides">
+              <blockquote class="active"><p>Hayotimdagi eng yaxshi sayohat bo'ldi! Hammasi a'lo darajada tashkil qilingan edi.</p><cite>— Sardor T., Toshkent <span>★★★★★</span></cite></blockquote>
+              <blockquote><p>Maldivga oilaviy sayohatimiz ertakdek o'tdi. Menejerlar har savolimizga darhol javob berishdi.</p><cite>— Nilufar A., Samarqand <span>★★★★★</span></cite></blockquote>
+              <blockquote><p>Narxi hamyonbop, xizmat esa premium darajada. Keyingi safar ham faqat Bolajon Tur!</p><cite>— Javlon R., Buxoro <span>★★★★★</span></cite></blockquote>
+            </div>
+            <div class="t-dots" id="tDots"><button class="active" aria-label="1-sharh"></button><button aria-label="2-sharh"></button><button aria-label="3-sharh"></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo"><svg class="logo__plane" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 30 60 6 44 58 30 38z" fill="#fff"/><path d="M30 38 60 6 22 34z" fill="#cfe3ff"/></svg><span class="logo__text"><strong>BOLAJON TUR</strong><small>DUNYO BO'YLAB</small></span></a>
+        <p>Toshkent sh., Amir Temur shoh ko'chasi 45. Litsenziya № T-0217.</p>
+      </div>
+      <div><h4>Kompaniya</h4><ul><li><a href="#packages">Paketlar</a></li><li><a href="#destinations">Yo'nalishlar</a></li><li><a href="#pricing">Narxlar</a></li><li><a href="#how">Bron qilish</a></li></ul></div>
+      <div><h4>Aloqa</h4><ul><li><a href="tel:+998781234567">+998 78 123 45 67</a></li><li><a href="mailto:info@bolajontur.uz">info@bolajontur.uz</a></li><li><a href="#">Telegram: @bolajontur</a></li></ul></div>
+      <div><h4>Yangiliklar</h4><p class="small">Maxsus takliflar va chegirmalardan birinchi bo'lib xabardor bo'ling.</p><form class="subscribe" id="subscribe"><input type="email" placeholder="Email" required aria-label="Email"><button type="submit">Obuna</button></form></div>
+    </div>
+    <div class="footer__bottom">© <span id="year">2026</span> Bolajon Tur. Barcha huquqlar himoyalangan.</div>
+  </footer>
+
+  <!-- Booking modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Yopish">×</button>
+      <h3 id="modalTitle">Bron qilish</h3>
+      <p id="modalSub">Ma'lumotlaringizni qoldiring — menejerimiz 15 daqiqada bog'lanadi.</p>
+      <form id="bookForm">
+        <label>Ismingiz<input type="text" required></label>
+        <label>Telefon<input type="tel" placeholder="+998 __ ___ __ __" required></label>
+        <label>Izoh<input type="text" placeholder="Masalan: 2 kattalar, oktabr oxiri"></label>
+        <button type="submit" class="btn btn--blue btn--block">Yuborish</button>
+      </form>
+      <div class="modal__success" id="bookSuccess" hidden>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+        <h3>Rahmat!</h3><p>So'rovingiz qabul qilindi. Yaxshi sayohat!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

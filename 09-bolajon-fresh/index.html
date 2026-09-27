@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Fresh — Yangi uzilgan oziq-ovqat mahsulotlari</title>
+  <meta name="description" content="Bolajon Fresh: 100% tabiiy meva, sabzavot, sut mahsulotlari va yong'oqlar — fermadan to'g'ridan-to'g'ri eshigingizgacha.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M6 16h28l-3 16H9z' fill='%238bc34a'/%3E%3Cpath d='M13 16l5-8M27 16l-5-8' stroke='%238bc34a' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>🚚 <b>BEPUL YETKAZISH</b> — 200 000 so'mdan ortiq buyurtmalarga</span>
+      <span class="hide-md">🌿 Yangi yeng, sog'lom yashang</span>
+      <span class="hide-sm">🎧 Qo'llab-quvvatlash 24/7</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon Fresh">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20h36l-4 20a3 3 0 0 1-3 2H13a3 3 0 0 1-3-2z" fill="none" stroke="#8bc34a" stroke-width="3" stroke-linejoin="round"/><path d="M15 20l6-10M33 20l-6-10M17 28v6M24 28v6M31 28v6" stroke="#8bc34a" stroke-width="3" stroke-linecap="round"/><path d="M24 12c0-5 3-8 8-8 0 5-3 8-8 8z" fill="#8bc34a"/></svg>
+        <span><b>Bolajon<i>Fresh</i></b><small>Tabiatdan yangi</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#picks">Do'kon</a>
+        <a href="#categories">Kategoriyalar</a>
+        <a href="#deal">Aksiyalar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <div class="actions">
+        <button class="icon" id="searchToggle" aria-label="Qidirish"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <button class="icon hide-sm" aria-label="Profil" data-toast="Shaxsiy kabinet tez orada ishga tushadi"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+        <button class="icon" id="cartBtn" aria-label="Savat"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge" id="cartCount">0</span></button>
+        <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="searchbar" id="searchbar">
+      <div class="container"><input type="search" id="searchInput" placeholder="Mahsulot qidiring: pomidor, olma, sut..." aria-label="Qidiruv"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <h1>Yangi mahsulot.<br>Sog'lom hayot.<br><span>Baxtli siz.</span> <em class="leafy">🍃</em></h1>
+          <p>100% tabiiy meva, sabzavot va boshqa mahsulotlar — yangi holida eshigingizgacha yetkazamiz.</p>
+          <a href="#picks" class="btn btn--lime">Xarid qilish <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <div class="perks">
+            <div><span>🌱</span><p><b>100% organik</b><small>Toza va tabiiy</small></p></div>
+            <div><span>🚚</span><p><b>Tez yetkazish</b><small>Har doim o'z vaqtida</small></p></div>
+            <div><span>🔒</span><p><b>Xavfsiz to'lov</b><small>Himoyalangan</small></p></div>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="hero__circle"><img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?w=1000&q=80&auto=format&fit=crop" alt="Savatdagi yangi sabzavotlar"></div>
+          <div class="stamp"><span>YANGI YENG</span><b>SOG'LOM</b><b>BO'LING</b></div>
+          <span class="float-leaf l1">🍃</span><span class="float-leaf l2">🍃</span><span class="float-leaf l3">🍃</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container farm reveal" id="about">
+      <div class="farm__img"><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=900&q=80&auto=format&fit=crop" alt="Bozordagi yangi sabzavotlar" loading="lazy"></div>
+      <div class="farm__text">
+        <small>BOLAJON FRESH'GA XUSH KELIBSIZ</small>
+        <h2>Fermamizdan<br><span>dasturxoningizga</span></h2>
+        <p>Ishonchli fermalardan qo'lda terilgan eng yangi mahsulotlarni yetkazamiz. Har safar — ishonsa bo'ladigan sifat.</p>
+        <a href="#categories" class="btn btn--lime btn--sm">Batafsil <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="farm__stats">
+        <div><span>🧑‍🌾</span><p><b><i data-count="25">0</i>+</b><small>Mahalliy fermalar</small></p></div>
+        <div><span>🥕</span><p><b><i data-count="500">0</i>+</b><small>Yangi mahsulotlar</small></p></div>
+        <div><span>😊</span><p><b><i data-count="10">0</i>K+</b><small>Baxtli mijozlar</small></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="head reveal"><h2><span>🍃</span> Kategoriyalar</h2><button class="more" data-cat="all">Barchasi →</button></div>
+        <div class="cats reveal" id="cats"></div>
+      </div>
+    </section>
+
+    <section class="container deal reveal" id="deal">
+      <div class="deal__text">
+        <small>CHEKLANGAN TAKLIF</small>
+        <h2>30% GACHA CHEGIRMA</h2>
+        <p>Yangi sabzavotlarga · Tugashiga: <b id="dealTimer">--:--:--</b></p>
+        <button class="btn btn--yellow btn--sm" data-cat="sabzavot">Taklifni olish <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="deal__img"><img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=1000&q=80&auto=format&fit=crop" alt="Rang-barang sabzavotlar" loading="lazy"></div>
+      <div class="deal__badge">Eng yaxshi sifat<br>Eng yaxshi narx</div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="head reveal"><h2><span>🍃</span> Nega aynan biz?</h2></div>
+        <div class="why reveal">
+          <div><span>🚜</span><p><b>Fermadan yangi</b><small>Qo'lda terilgan</small></p></div>
+          <div><span>🧪</span><p><b>Kimyoviy moddalarsiz</b><small>Siz va oilangiz uchun xavfsiz</small></p></div>
+          <div><span>♻️</span><p><b>Barqaror yetishtirilgan</b><small>Tabiatga foydali</small></p></div>
+          <div><span>🏅</span><p><b>Premium sifat</b><small>Sifat kafolatlangan</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--top0" id="picks">
+      <div class="container">
+        <div class="head reveal"><h2><span>🍃</span> <b id="picksTitle">Siz uchun tanlanganlar</b></h2><div class="arrows"><button id="pPrev" aria-label="Oldingi">←</button><button id="pNext" aria-label="Keyingi">→</button></div></div>
+        <div class="products reveal" id="products"></div>
+      </div>
+    </section>
+
+    <section class="container newsletter reveal" id="contact">
+      <div class="newsletter__icon">✉️</div>
+      <div class="newsletter__text"><b>Sog'lom bo'ling, xabardor bo'ling!</b><small>Eng yaxshi takliflar, sog'liq bo'yicha maslahatlar va yangiliklar uchun obuna bo'ling.</small></div>
+      <form class="subscribe" id="subscribe"><input type="email" placeholder="Email manzilingiz" required aria-label="Email"><button type="submit">Obuna</button></form>
+      <img class="newsletter__img" src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=300&q=80&auto=format&fit=crop" alt="" loading="lazy">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#" class="logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20h36l-4 20a3 3 0 0 1-3 2H13a3 3 0 0 1-3-2z" fill="none" stroke="#8bc34a" stroke-width="3"/><path d="M15 20l6-10M33 20l-6-10" stroke="#8bc34a" stroke-width="3" stroke-linecap="round"/></svg><span><b>Bolajon<i>Fresh</i></b><small>Tabiatdan yangi</small></span></a><p>Yangi, organik va sog'lom oziq-ovqat uchun ishonchli manzilingiz.</p></div>
+      <div><h4>Havolalar</h4><ul><li><a href="#picks">Do'kon</a></li><li><a href="#categories">Kategoriyalar</a></li><li><a href="#deal">Aksiyalar</a></li><li><a href="#about">Biz haqimizda</a></li></ul></div>
+      <div><h4>Mijozlarga</h4><ul><li><a href="#">Mening hisobim</a></li><li><a href="#">Buyurtmani kuzatish</a></li><li><a href="#">Yetkazib berish</a></li><li><a href="#">Qaytarish</a></li></ul></div>
+      <div><h4>Aloqa</h4><ul><li><a href="tel:+998781112233">+998 78 111 22 33</a></li><li><a href="mailto:salom@bolajonfresh.uz">salom@bolajonfresh.uz</a></li><li>Toshkent, Chilonzor, Qatortol 3</li></ul></div>
+      <div><h4>To'lov usullari</h4><div class="pay"><span>Click</span><span>Payme</span><span>Uzcard</span><span>Humo</span><span>Naqd</span></div><div class="pay pay--sec"><span>🔒 SSL himoya</span></div></div>
+    </div>
+    <p class="footer__bottom">© <span id="year">2026</span> Bolajon Fresh. Barcha huquqlar himoyalangan. 🍃</p>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__head"><h3>🧺 Savatingiz</h3><button data-close aria-label="Yopish">×</button></div>
+    <div class="progress"><p id="freeText"></p><div><span id="freeBar"></span></div></div>
+    <ul class="drawer__list" id="drawerList"></ul>
+    <div class="drawer__foot"><div class="drawer__total"><span>Jami:</span><b id="drawerTotal">0 so'm</b></div><button class="btn btn--lime btn--block" id="checkout">Buyurtma berish</button></div>
+  </aside>
+  <div class="overlay" id="overlay" data-close></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

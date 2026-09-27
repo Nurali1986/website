@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolajon Market — Maktab va ofis uchun hammasi</title>
+  <meta name="description" content="Bolajon Market: kanselyariya, daftarlar, ryukzaklar, ofis texnikasi va mebellari — O'zbekiston bo'ylab tez yetkazib berish.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230f1e3d'/%3E%3Cpath d='M12 10h11a6 6 0 0 1 1 11.9A6 6 0 0 1 23 32H12z' fill='%23f26b1d'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span><svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>500 000 so'mdan ortiq xaridlarga bepul yetkazib berish</span>
+      <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>14 kun ichida pulni qaytarish kafolati</span>
+      <span><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>24/7 qo'llab-quvvatlash</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Bolajon Market">
+        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24a18 18 0 0 1 32-11" fill="none" stroke="#f26b1d" stroke-width="5" stroke-linecap="round"/><path d="M14 12h13a7 7 0 0 1 2 13.7A7.5 7.5 0 0 1 27 40H14z" fill="#0f1e3d"/><path d="M19 17h7a3 3 0 0 1 0 6h-7zM19 28h8a3.5 3.5 0 0 1 0 7h-8z" fill="#fff"/><path d="M42 24a18 18 0 0 1-8 15" fill="none" stroke="#2bb673" stroke-width="5" stroke-linecap="round"/></svg>
+        <span class="logo__text"><strong>BOLAJON</strong><small>MARKET · SIFAT VA ISHONCH</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="#home" class="nav__link active">Bosh sahifa</a>
+        <div class="dropdown">
+          <a href="#categories" class="nav__link">Katalog <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dropdown__menu" id="catMenu"></div>
+        </div>
+        <a href="#bestsellers" class="nav__link">Xitlar</a>
+        <a href="#sale" class="nav__link">Aksiyalar</a>
+        <a href="#why" class="nav__link">Biz haqimizda</a>
+        <a href="#contact" class="nav__link">Aloqa</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Qidirish"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <button class="icon-btn hide-sm" aria-label="Profil" data-toast="Profil tez orada ishga tushadi"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+        <button class="icon-btn" id="wishBtn" aria-label="Sevimlilar"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg><span class="badge" id="wishCount">0</span></button>
+        <button class="icon-btn" id="cartBtn" aria-label="Savat"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge badge--orange" id="cartCount">0</span></button>
+        <button class="burger" id="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="welcome">Xush kelibsiz — <b>BOLAJON MARKET</b></span>
+          <h1>Sifatli mahsulotlar.<br><span>Minglab mijozlar ishonchi.</span></h1>
+          <p>Maktab va ofis uchun kerakli barcha narsalar: kanselyariya, daftarlar, ryukzaklar, texnika va mebel — puxta tanlangan, hamyonbop narxlarda.</p>
+          <div class="hero__actions">
+            <a href="#bestsellers" class="btn btn--orange">Xarid qilish <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+            <a href="#categories" class="btn btn--outline">Katalogni ko'rish</a>
+          </div>
+          <div class="hero__perks">
+            <div><svg viewBox="0 0 24 24"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21l1.4-7L2 9.3l7-.8z"/></svg><b>Premium sifat</b><small>Sinab tanlangan</small></div>
+            <div><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><b>Xavfsiz to'lov</b><small>Click, Payme, karta</small></div>
+            <div><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg><b>Oson qaytarish</b><small>14 kun ichida</small></div>
+            <div><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><b>Yordam</b><small>24/7 do'stona</small></div>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="hero__shape"></div>
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1000&q=80&auto=format&fit=crop" alt="Maktab ryukzagi">
+          <div class="hero__tag"><small>Yangi mavsum</small><b>-25%</b><span>ryukzaklarga</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits strip -->
+    <section class="strip">
+      <div class="container strip__grid">
+        <div><svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><p><b>Bepul yetkazish</b><small>500 000 so'mdan ortiq xaridga</small></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg><p><b>14 kunda qaytarish</b><small>Ortiqcha savollarsiz</small></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><p><b>Xavfsiz to'lov</b><small>100% himoyalangan</small></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><p><b>24/7 yordam</b><small>Doim aloqadamiz</small></p></div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="title reveal">Kategoriyalar <span>bo'yicha</span></h2>
+        <div class="cats reveal">
+          <button class="cats__arrow" id="catPrev" aria-label="Oldingi"><svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+          <div class="cats__track" id="catTrack"></div>
+          <button class="cats__arrow" id="catNext" aria-label="Keyingi"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best sellers -->
+    <section class="section section--tight" id="bestsellers">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="title">Eng ko'p <span>sotilganlar</span></h2>
+          <div class="tabs" id="tabs"></div>
+        </div>
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <!-- Sale banner -->
+    <section class="section section--tight" id="sale">
+      <div class="container">
+        <div class="sale reveal">
+          <div class="sale__img"><img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=900&q=80&auto=format&fit=crop" alt="Kanselyariya to'plami" loading="lazy"></div>
+          <div class="sale__text">
+            <small>Maxsus taklif</small>
+            <h2>"Maktabga tayyor" — <span>40% gacha</span> chegirma</h2>
+            <p>Tanlangan mahsulotlarga cheklangan muddatli aksiya.</p>
+            <div class="timer" id="timer" aria-live="polite">
+              <div><b data-t="d">00</b><small>kun</small></div>
+              <div><b data-t="h">00</b><small>soat</small></div>
+              <div><b data-t="m">00</b><small>daqiqa</small></div>
+              <div><b data-t="s">00</b><small>soniya</small></div>
+            </div>
+          </div>
+          <a href="#bestsellers" class="btn btn--orange sale__btn" data-filter-sale>Aksiyani ko'rish <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section--tight" id="why">
+      <div class="container">
+        <h2 class="title center reveal">Nega aynan <span>biz?</span></h2>
+        <div class="why reveal">
+          <div><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2.5 1-4.5 4-4.5 1.8 0 3 1 3 4.5"/></svg><p><b><span data-count="10">0</span>K+</b><small>Mamnun mijozlar</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21l1.4-7L2 9.3l7-.8z"/></svg><p><b>4.8</b><small>O'rtacha reyting</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg><p><b><span data-count="2500">0</span>+</b><small>Mahsulot turlari</small></p></div>
+          <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><p><b>100%</b><small>Xavfsiz to'lov</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--tight">
+      <div class="container">
+        <h2 class="title center reveal">Mijozlarimiz <span>fikri</span></h2>
+        <div class="testis reveal" id="testis">
+          <article class="testi"><span class="stars">★★★★★</span><p>“Sifati a'lo, yetkazib berish juda tez! Farzandimning butun maktab to'plamini shu yerdan oldim.”</p><div class="who"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&q=80&auto=format&fit=crop" alt="" loading="lazy"><b>Gulnora S.</b><small>Tasdiqlangan xaridor</small></div></article>
+          <article class="testi"><span class="stars">★★★★★</span><p>“Ofisimiz uchun kreslo va printerni shu yerdan buyurtma qildik. Narxlar bozordagidan arzonroq.”</p><div class="who"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&q=80&auto=format&fit=crop" alt="" loading="lazy"><b>Dilshod R.</b><small>Tasdiqlangan xaridor</small></div></article>
+          <article class="testi"><span class="stars">★★★★★</span><p>“Mijozlarga xizmat ko'rsatish ajoyib, mahsulotlar chiroyli qadoqlangan. Rahmat!”</p><div class="who"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&q=80&auto=format&fit=crop" alt="" loading="lazy"><b>Sevara M.</b><small>Tasdiqlangan xaridor</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="contact">
+      <div class="container newsletter__inner">
+        <div class="newsletter__text">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <div><b>BOLAJON oilasiga qo'shiling</b><small>Maxsus takliflar, sovg'alar va bir martalik chegirmalar uchun obuna bo'ling.</small></div>
+        </div>
+        <form class="subscribe" id="subscribe"><input type="email" placeholder="Email manzilingiz" required aria-label="Email"><button type="submit">Obuna bo'lish <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24a18 18 0 0 1 32-11" fill="none" stroke="#f26b1d" stroke-width="5" stroke-linecap="round"/><path d="M14 12h13a7 7 0 0 1 2 13.7A7.5 7.5 0 0 1 27 40H14z" fill="#0f1e3d"/><path d="M19 17h7a3 3 0 0 1 0 6h-7zM19 28h8a3.5 3.5 0 0 1 0 7h-8z" fill="#fff"/><path d="M42 24a18 18 0 0 1-8 15" fill="none" stroke="#2bb673" stroke-width="5" stroke-linecap="round"/></svg><span class="logo__text"><strong>BOLAJON</strong><small>MARKET · SIFAT VA ISHONCH</small></span></a>
+        <p>Ishonchli sifat, hamyonbop narx. Toshkent sh., Shayxontohur tumani, Navoiy ko'chasi 30.</p>
+        <div class="socials"><a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="m22 3-20 8 7 2 2 7 3-5 5 4z"/></svg></a><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a></div>
+      </div>
+      <div><h4>Do'kon</h4><ul><li><a href="#categories">Barcha mahsulotlar</a></li><li><a href="#bestsellers">Xitlar</a></li><li><a href="#bestsellers">Yangi kelganlar</a></li><li><a href="#sale">Aksiyalar</a></li></ul></div>
+      <div><h4>Mijozlarga</h4><ul><li><a href="#contact">Aloqa</a></li><li><a href="#">Yetkazib berish</a></li><li><a href="#">Qaytarish shartlari</a></li><li><a href="#">Ko'p so'raladigan savollar</a></li></ul></div>
+      <div><h4>Kompaniya</h4><ul><li><a href="#why">Biz haqimizda</a></li><li><a href="#">Korporativ mijozlar</a></li><li><a href="#">Vakansiyalar</a></li><li><a href="#">Maxfiylik siyosati</a></li></ul></div>
+      <div><h4>To'lov usullari</h4><div class="pay"><span>Click</span><span>Payme</span><span>Uzcard</span><span>Humo</span><span>Visa</span></div><p class="phone">📞 <a href="tel:+998712223344">+998 71 222 33 44</a></p></div>
+    </div>
+    <div class="footer__bottom container"><span>© <span id="year">2026</span> BOLAJON MARKET. Barcha huquqlar himoyalangan.</span><span>UZS so'm</span></div>
+  </footer>
+
+  <!-- Search overlay -->
+  <div class="search" id="search" aria-hidden="true">
+    <div class="search__box">
+      <div class="search__field"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="searchInput" placeholder="Mahsulot qidiring: daftar, ruchka, ryukzak..." aria-label="Qidiruv"><button id="searchClose" aria-label="Yopish">×</button></div>
+      <ul class="search__results" id="searchResults"></ul>
+    </div>
+  </div>
+
+  <!-- Cart / wishlist drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__head"><h3 id="drawerTitle">Savat</h3><button data-close-drawer aria-label="Yopish">×</button></div>
+    <ul class="drawer__list" id="drawerList"></ul>
+    <div class="drawer__foot" id="drawerFoot">
+      <div class="drawer__total"><span>Jami:</span><b id="cartTotal">0 so'm</b></div>
+      <div class="drawer__hint" id="shipHint"></div>
+      <button class="btn btn--orange btn--block" id="checkout">Buyurtma berish</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay" data-close-drawer></div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
