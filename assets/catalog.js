@@ -23,6 +23,7 @@ const SITES = [
   { n: "23", dir: "23-dermatolog", name: "Dr. Farrux Ergashev", role: "Dermatolog", type: "brand", cat: "tibbiyot", color: "#7c3aed", text: "Xollarni ABCDE belgilari bo'yicha tekshirish, onlayn konsultatsiya.", tags: ["ABCDE tekshiruv", "Onlayn"] },
   { n: "24", dir: "24-ginekolog", name: "Dr. Gulnora Axmedova", role: "Akusher-ginekolog", type: "brand", cat: "tibbiyot", color: "#db2777", text: "Homiladorlik haftasi, tug'ruq sanasi va ko'riklar jadvali kalkulyatori.", tags: ["Homiladorlik kalkulyatori"] },
   { n: "25", dir: "25-avtoservis", name: "Usta Rustam", role: "Avtousta", type: "brand", cat: "xizmat", color: "#1677ff", text: "Ta'mir narxi kalkulyatori va \"mashinada nima bo'lyapti\" yordamchisi.", tags: ["Narx kalkulyatori", "Belgilar yordamchisi"] },
+  { n: "26", dir: "taplink", name: "Taplink", role: "Instagram uchun", type: "brand", cat: "xizmat", color: "#ca9a04", text: "Instagram bio uchun bitta havola: kontaktlar, xizmatlar, portfolio va Telegram'ga buyurtma formasi.", tags: ["Havolalar", "Xizmat narxlari", "Telegram'ga buyurtma"] },
 ];
 
 const CATS = { all: "Hammasi", talim: "Ta'lim", tibbiyot: "Tibbiyot", savdo: "Savdo", xizmat: "Xizmatlar", hayvon: "Uy hayvonlari" };
